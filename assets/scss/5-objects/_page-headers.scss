@@ -1,0 +1,45 @@
+// ==========================================================================
+// #Page-headers
+// ==========================================================================
+
+
+.page-header {
+	z-index:5;
+	position: relative;
+
+	&--title {
+		font-family: "Halis Rounded","Helvetica Neue",Helvetica,Arial,sans-serif;
+	    text-transform: uppercase;
+	    font-weight: 700;
+	}
+}
+
+.header-alternative {
+	font-family: "Halis Rounded","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 0;
+    color: #2e2e2e;
+   &.negative {
+		color: white;
+	}
+}
+
+.highlighted  {
+		margin-top: 50px;
+	    margin-bottom: 60px;
+	    font-size: 2.875em;
+
+		& span {
+			position: relative;
+		}
+		& span:after {
+		    content: ' ';
+		    @include absolute(bottom -10px left 0);
+		    width: 100%;
+		    height: 7px;
+		    background-color: #fd4b46;
+		    background-image: -webkit-gradient(linear,right top,left top,from(#ec3449),to(#f45c43));
+		    background-image: linear-gradient(to left,#ec3449 0,#f45c43 100%);
+		}
+	}

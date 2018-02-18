@@ -1,0 +1,100 @@
+// ==========================================================================
+// #Site Nav
+// ==========================================================================
+
+.site-nav {
+    @include absolute(top 0 right -240px);
+    width: 240px;
+    height: 100%;
+    border-left: 1px solid #fff;
+    background-color: #2d2d3b;
+    @include transition(.25s ease-in-out); 
+    height: 100vh;
+
+    &.is-active {
+    	right: 0;
+    }
+
+    @include media-query(medium) {
+	    @include relative(top inherit right inherit);
+	    float: right;
+	    @include box(auto);
+	    padding-bottom: 0;
+
+	    -webkit-animation-duration: .8s;
+	    animation-duration: .8s;
+	    -webkit-animation-delay: 1.2s;
+	   	animation-delay: 1.2s;
+
+	    border-left: none;
+	    background: none;
+
+	    @include media-query(medium) {
+	    	margin: 0;
+	    	position: absolute;
+	    	right: 15px;
+	    	top: 46px;
+		}
+    }
+
+	&__list {
+	    margin-top: 50px;
+      	@include media-query(medium) {
+      		margin-bottom: unset;
+      		margin-top: unset;
+      	}
+	}
+
+	&__item {
+	    display: block;
+	    margin: 14px 12px 14px 12px;
+	    @include media-query(medium) {
+	        display: inline-block;
+    		margin: 0 12px 0 12px;
+	    }
+	}
+
+	&__link {
+		font-size: 1rem;	 	
+	    font-weight: 700;
+	    position: relative;
+	    display: block;
+	    padding: 0 0 5px;
+	    text-align: center;
+	    text-decoration: none;
+	    text-transform: uppercase;
+	    color: #fff;
+	    @include transition(color .3s ease);
+
+	    @include media-query(medium) {
+	    	font-size: 13px;
+    		font-weight: 400;
+	    }
+	}
+
+	&__footer {
+		@include media-query(medium) {
+	    	display: none;
+	    }
+	}
+}
+
+.ovoerlay {
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+    opacity: 0;
+    visibility: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-transition: all .01s;
+    transition: all .01s;
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+}
