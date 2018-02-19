@@ -7,16 +7,35 @@ window.onload = function() {
  
 
 	// MAIN NAVIGATION MENU TOGGLE
-	var siteNav = document.querySelector(".site-nav");
-	var siteHamburger = document.querySelector(".site-header__toggle-button");
+	var siteNav = document.querySelector(".site-nav"),
+		siteHamburger = document.querySelector(".site-header__toggle-button"),
+		overlayDiv	= document.createElement('div'),
+		menuOverlay = document.createElement('div');
+		menuOverlay.className = 'overlay';
 
-	function toggleMainMenu() {		
-		siteNav.classList.toggle("is-active");
-		siteHamburger.classList.toggle("is-active");
+	 function openMenu() {
+        siteNav.classList.add('is-active');
+        siteHamburger.classList.add('is-active');
+        document.body.appendChild(menuOverlay);
+    }
+
+    function closeMenu() {
+        document.body.removeChild(menuOverlay);
+        siteNav.classList.remove("is-active");
+        siteHamburger.classList.remove("is-active");
+    }
+
+    function toggle() {
+
+	    if(siteNav.classList.contains("is-active")) {
+	        return closeMenu();
+	    }
+
+	    return openMenu();
 	}
 
-	siteHamburger.addEventListener('click', toggleMainMenu, false);
-
+	siteHamburger.addEventListener('click', toggle, false);
+	menuOverlay.addEventListener('click', closeMenu, false);
 
 
 	// MAIN NAVIGATION STICKY
@@ -25,6 +44,9 @@ window.onload = function() {
 	    prevScroll = 0;
 	
 	function stickyNav(e) {
+		if(siteNav.classList.contains("is-active")) {
+	        return;
+	    }
 		if (window.scrollY >= siteHeaderHeight) {
 			siteHeader.classList.add('is-sticky');
 		} else{
@@ -33,7 +55,10 @@ window.onload = function() {
 	}
 
 	function showNav(e) {
- 
+
+		if(siteNav.classList.contains("is-active")) {
+	        return;
+	    }
 		var currentScroll = window.pageYOffset;
 		console.log(currentScroll);
 

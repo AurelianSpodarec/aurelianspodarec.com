@@ -4,13 +4,14 @@
 
 .main-showcase {
 	width: 100%;
-    padding-top: 3.75em;
+    padding-top: 7.75em;
     padding-bottom: 3.75em;
     text-align: center;
-    transform: translateY(-50%);
-
-    @include media-query(medium) {
+    position: relative;
+   
+    @include media-query(large) {
 	    padding: 0;
+	    transform: translateY(-50%);
 	    height: 240px;
 	    width: 100%;
 	    @include absolute(top 50%);
@@ -30,7 +31,7 @@
 	    font-weight: 400;
 	    margin: 0 0 8px 0;
 
-		@include media-query(medium) {
+		@include media-query(large) {
 			font-size: 4.6875em;
 		    line-height: 80px;
 		    letter-spacing: 7px;
@@ -41,12 +42,12 @@
 	    text-align: center;
 	    color: #d1d9e0;
 	    font-size: 1.3125em;
-	    line-height: 16;
+	   // line-height: 16;
 	    text-transform: none;
 	    font-weight: 300;
 	    margin: 0 0 16px 0;
 	    font-style: italic;
-		@include media-query(medium) {
+		@include media-query(large) {
 			font-size: 29px;
 	    	line-height: 36px;
 		}
@@ -58,7 +59,7 @@
 	    height: 10px;
 	    background: #e04347;
 	    margin: 0 auto 12px;
-		@include media-query(medium) {
+		@include media-query(large) {
 
 		}
 	}
@@ -72,7 +73,7 @@
 	    font-weight: 300;
 	    margin: 0 0 16px 0;
 
-		@include media-query(medium) {
+		@include media-query(large) {
 			font-size: 1.6875em;
 	    	line-height: 36px;   
 		}

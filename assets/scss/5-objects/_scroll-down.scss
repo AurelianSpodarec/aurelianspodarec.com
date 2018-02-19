@@ -25,7 +25,7 @@
     animation-fill-mode: both;
     @include transition(color .3s ease-in-out);
     
-    @include media-query(medium) {
+    @include media-query(large) {
         display: block;
     }
 

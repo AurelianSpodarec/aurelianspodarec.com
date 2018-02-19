@@ -28,7 +28,8 @@
     }
 
     &--full {
-	    @include media-query(medium) {
+    	position: relative;
+	    @include media-query(large) {
 	    	min-height: 600px;
 	    	height: 100vh;
 	    }
@@ -70,7 +71,7 @@
 
 	    color: white;
 
-	    @include media-query(medium) {
+	    @include media-query(large) {
 			@include absolute(top 0 left 15px);
 	    	margin-top: 29px;
 		}
@@ -85,7 +86,7 @@
 	    border: 0;
 	    background: none;
 	    cursor: pointer;
-		@include media-query(medium) {
+		@include media-query(large) {
 			display: none;
 		}
 		&.is-active .site-header--toggle-span {

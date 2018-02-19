@@ -17,7 +17,6 @@
 </head>
 <body <?php body_class(); ?>>
 
-    <div clas"overlay-nav"></div>
 
     <header class="site-header">
     <div class="site-header__head">
@@ -46,9 +45,17 @@
         </nav>
 
         <footer class="site-nav__footer">
-            <a href="">aurelinaxspodarec@gmail.com</a>
+            <a href="">aurelianx@gmail.com</a>
             <p>07507 452 2524</p>
-
+            <p>
+                Developer,
+                <br>
+                Blogger,
+                <br>
+                Teacher,
+                <br>
+                Speaker
+            </p>
             <p>&copy; Aurelian Spodarec</p>
         </footer>
         </div>
@@ -57,8 +64,17 @@
     </div><!-- /site-header__head -->
     </header>
 
-
+ 
+       
+        
+ 
     <section class="site-header--full site-header__img"  style="background-image: url('http://www.studyportals.com/wp-content/uploads/2016/03/home-office-336373.jpg');">
+<!--          <video autoplay loop class="fillWidth">
+            <source src="<?php echo get_template_directory_uri(); ?>/public/vd.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="<?php echo get_template_directory_uri(); ?>/public/vd.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="<?php echo get_template_directory_uri(); ?>/public/vd.ogv" type="video/ogv" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video> -->
+    <div class="site-header__overlay"></div>
     <div class="main-showcase">
         <h3 class="main-showcase__super-header">Aurelian Spodarec</h3>
         <h1 class="main-showcase__super-subheader">Front-end WordPress Developer</h1>
@@ -71,10 +87,11 @@
   
     </section>
 
-  <!--<section class="subpage-header site-header__img"   style="background-image: url('http://www.studyportals.com/wp-content/uploads/2016/03/home-office-336373.jpg');">
+  <!-- <section class="subpage-header site-header__img"   style="background-image: url('http://www.studyportals.com/wp-content/uploads/2016/03/home-office-336373.jpg');">
+    <div class="site-header__overlay"></div>
     <h1 class="subpage-header--title text-center highlighted negative subpage-header--alternate">
         <span>
             <?php the_title(); ?>
         </span>
     </h1>          
-    </section> -->
+    </section>  -->
