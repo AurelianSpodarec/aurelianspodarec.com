@@ -5,7 +5,8 @@
 
 .subpage-header {
 	z-index:5;
-
+	position: relative;
+	
 	&--title {
 		font-family: "Halis Rounded","Helvetica Neue",Helvetica,Arial,sans-serif;
 	    text-transform: uppercase;

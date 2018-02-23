@@ -5,7 +5,7 @@
 .container {
  
  
-    max-width: 1240px;
+    max-width: 1070px;
 	
 	margin: 0 auto;
 	padding: 0 15px;
@@ -14,4 +14,31 @@
 
 .text-center {
 	text-align: center;
+}
+
+.section {
+	padding: 25px 0 33px 0;
+    position: relative;
+    background: #fff;
+    z-index: 100;
+
+    @include media-query(medium) {
+    	padding: 55px 0 63px 0;
+    }
+
+    &--special {
+    	padding-top: 0;
+    	padding-bottom: 0;
+    }
+
+	&--secondary {
+		color: rgb(146, 151, 158);
+    	background: rgb(39, 44, 49);
+    	padding: 76px 0 63px 0;
+
+    	& p {
+    		color: #92979e;
+    	}
+	}
+
 }
