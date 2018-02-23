@@ -1,6 +1,13 @@
-<section class="section section--secondary">   
- <h2 class="highlighted text-center negative header-alternative">
+<section class="section section--secondary">
+<div class="container--narrow">
+
+<h2 class="highlighted text-center negative header-alternative">
  	<span><?php the_sub_field( 'title' ) ?></span>
- </h2>
-<?php the_sib_field( 'paragraph' ); ?>
+</h2>
+
+<div class="text-center">
+<?php the_sub_field( 'paragraph' ); ?>
+</div>
+
+</div>
 </section>

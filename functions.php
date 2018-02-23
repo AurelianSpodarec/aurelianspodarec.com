@@ -31,6 +31,9 @@
 
 	add_filter('show_admin_bar', '__return_false');
 
+
+	define('ALLOW_UNFILTERED_UPLOADS', true);
+
 	
 	// add_action('get_header', 'my_filter_head');
 
