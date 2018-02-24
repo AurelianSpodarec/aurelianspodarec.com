@@ -6,6 +6,10 @@
 .contact-info {
 	@include clearfix;
 
+	&__row {
+		@include clearfix;
+	}
+
 	&__col {
 		float: left;
     	margin-right: 30px;

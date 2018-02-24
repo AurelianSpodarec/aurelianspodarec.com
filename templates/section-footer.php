@@ -1,7 +1,7 @@
-<section class="section section--secondary section-contact-info section-alt">
-<div class="container">
+<section class="section section--secondary section-contact-info section-alt" style="background: #252532;">
+<div class="container container--head-fot">
 
-    
+    <div class="contact-info__row">
     <div class="contact-info__col">
         <p>Aurelian Spodarec</p>
     </div>
@@ -20,6 +20,8 @@
     </div>
     
     <p>&copy; Aurelian Spodarec</p>
+    </div>
+
 
 </div>
 </section>

@@ -20,7 +20,7 @@
 
     <header class="site-header">
     <div class="site-header__head">
-    <div class="container site-header--relative-wrapper">
+    <div class="container container--head-fot site-header--relative-wrapper">
 
 
         <a class="site-header__logo" href="">Aurelian Spodarec</a>

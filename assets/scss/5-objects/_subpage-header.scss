@@ -27,15 +27,15 @@
 			position: relative;
 		}
 		
-		& span:after {
-		    content: ' ';
-		    @include absolute(bottom -10px left 0);
-		    width: 100%;
-		    height: 7px;
-		    background-color: #fd4b46;
-		    background-image: -webkit-gradient(linear,right top,left top,from(#ec3449),to(#f45c43));
-		    background-image: linear-gradient(to left,#ec3449 0,#f45c43 100%);
-		}
+		// & span:after {
+		//     content: ' ';
+		//     @include absolute(bottom -10px left 0);
+		//     width: 100%;
+		//     height: 7px;
+		//     background-color: #fd4b46;
+		//     background-image: -webkit-gradient(linear,right top,left top,from(#ec3449),to(#f45c43));
+		//     background-image: linear-gradient(to left,#ec3449 0,#f45c43 100%);
+		// }
 	}
 
 }

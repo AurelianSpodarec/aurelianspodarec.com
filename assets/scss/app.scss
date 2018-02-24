@@ -44,7 +44,7 @@
 // ==========================================================================
 // 6-modules
 // ==========================================================================
-@import "6-modules/card";
+@import "6-modules/form-section";
 @import "6-modules/contact-info";
 @import "6-modules/main-showcase";
 @import "6-modules/process";
@@ -55,3 +55,47 @@
 // ==========================================================================
 // 7-pages
 // ==========================================================================
+
+.ready-portfolio {
+	background: #2d2d3b;
+    text-align: center;
+    padding: 7rem 1rem;
+    z-index: 1;
+    position: relative;
+    -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+
+    & h2 {
+   		font-weight: 300;
+	    font-size: 2.5rem;
+	    line-height: 1.275;
+	    color: #626280;
+    }
+
+    & a {
+    	display: inline-block;
+	    font-size: 2rem;
+	    line-height: 1.7;
+	    color: #fff;
+	    font-weight: 400;
+	    font-family: Montserrat,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+	    text-decoration: none;
+	    background: -webkit-gradient(linear,left top,left bottom,from(transparent),to(transparent)),-webkit-gradient(linear,left top,left bottom,from(transparent),to(transparent)),-webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,58%,0)),to(hsla(0,0%,58%,0))),-webkit-gradient(linear,left top,left bottom,from(#fff),to(#fff));
+	    background: linear-gradient(transparent,transparent),linear-gradient(transparent,transparent),linear-gradient(hsla(0,0%,58%,0),hsla(0,0%,58%,0)),linear-gradient(#fff,#fff);
+	    background-size: .05em 1px,.05em 1px,1px 1px,0 1px;
+	    background-repeat: no-repeat,no-repeat,repeat-x,no-repeat;
+	    background-position-y: 98%,98%,98%,98%;
+	    background-position-x: 0,100%,0,0;
+	    -webkit-transition: background-size .2s linear;
+	    transition: background-size .2s linear;
+    }
+
+    & p {
+    	font-size: 1.3rem;
+	    line-height: 2.4rem;
+	    font-weight: 300;
+	    font-family: Montserrat,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+	    margin-top: 2rem;
+	    color: #626280;
+    }
+}

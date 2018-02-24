@@ -37,7 +37,7 @@
 
 	&--relative-wrapper {
 		position: relative;
-   		min-height: 100px;
+   		min-height: 52px;
 	}
 
 	&__overlay {
@@ -53,6 +53,7 @@
 	&__head {
  		position: relative;
  		@include clearfix;
+ 		line-height: 2;
 	}
 
 	&__logo {
@@ -60,8 +61,6 @@
 	    font-weight: bold;
 	    display: inline-block;
 	    float: left;
-	    margin-top: 16px;
-
 	    -webkit-animation-duration: .8s;
 	            animation-duration: .7s;
 	            animation-duration: .8s;
@@ -71,15 +70,15 @@
 
 	    color: white;
 
-	    @include media-query(large) {
-			@include absolute(top 0 left 15px);
-	    	margin-top: 29px;
-		}
+	 //    @include media-query(large) {
+		// 	@include absolute(top 0 left 15px);
+	 //    	margin-top: 29px;
+		// }
 	}
 
 	&__toggle-button {
 		padding: 9px 10px;
-	    @include absolute(top 14px right 10px);
+	    @include absolute(top 5px right 10px);
 	    @include box(50px);
 	    text-align: center;
 	    z-index: 99;	

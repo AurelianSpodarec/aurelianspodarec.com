@@ -6,21 +6,21 @@
     <ul class="services-tab__nav">
 
         <li class="services-tab__list-item">
-        <a href="#tab_complete-website" class="services-tab__link-item is-active">
+        <a onclick="return false;" href="#tab_complete-website" class="services-tab__link-item is-active">
             <i class="fa fa-laptop"></i>
             <span>Complete Website</span>   
         </a>
         </li>
 
         <li class="services-tab__list-item">
-        <a href="#tab_psd-to-wordpress" class="services-tab__link-item">
+        <a onclick="return false;" href="#tab_psd-to-wordpress" class="services-tab__link-item">
             <i class="fa fa-laptop"></i>
             <span>PSD to WordPress</span>
         </a>
         </li>
 
         <li class="services-tab__list-item">
-        <a href="#tab_psd-to-html" class="services-tab__link-item">
+        <a onclick="return false;" href="#tab_psd-to-html" class="services-tab__link-item">
             <i class="fa fa-laptop"></i>
             <span>PSD to HTML</span>
         </a>

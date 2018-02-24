@@ -36,12 +36,7 @@
 	    border-left: none;
 	    background: none;
 
-	    @include media-query(large) {
-	    	margin: 0;
-	    	position: absolute;
-	    	right: 15px;
-	    	top: 22px;
-		}
+	 
     }
 
 	&__list {

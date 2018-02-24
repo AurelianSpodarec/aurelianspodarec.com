@@ -1,7 +1,7 @@
-<section class="section section-contact">
+<section>
 <div class="container">
 
-
+Portfolio
 
 </div>
 </section>

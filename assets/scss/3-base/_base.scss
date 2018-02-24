@@ -16,7 +16,7 @@ body {
     margin-top: 0!important;
     font-family: Montserrat,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
     @include media-query(medium) {
-        font-size: 1.1em;
+        font-size: 100%;
     }
     @if ($global-body-antialiased) {
         -webkit-font-smoothing: antialiased;

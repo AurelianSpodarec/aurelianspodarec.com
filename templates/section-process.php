@@ -91,6 +91,6 @@
 </div>
 </section>
 
-<ul class="process__list">
+<!-- <ul class="process__list">
 <li><a href="">HELLO</a></li>
-</ul>
+</ul> -->

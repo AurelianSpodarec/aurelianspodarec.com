@@ -18,7 +18,7 @@ if( have_rows('template_blocks') ):
         elseif( get_row_layout() == 'services_excerpt' ):
            get_template_part( 'templates/section', 'services-excerpt' );
 
-       elseif( get_row_layout() == 'contact' ):
+        elseif( get_row_layout() == 'contact' ):
            get_template_part( 'templates/section', 'contact' );
 
         elseif( get_row_layout() == 'services_tabs' ):
@@ -36,11 +36,23 @@ if( have_rows('template_blocks') ):
         elseif( get_row_layout() == 'bar_secondary' ):
            get_template_part( 'templates/section', 'bar-secondary' );
 
-       elseif( get_row_layout() == 'process' ):
+        elseif( get_row_layout() == 'process' ):
            get_template_part( 'templates/section', 'process' );
 
-       elseif( get_row_layout() == 'empty_bar' ):
+        elseif( get_row_layout() == 'empty_bar' ):
            get_template_part( 'templates/section', 'empty-bar' );
+
+        elseif( get_row_layout() == 'form_section' ):
+           get_template_part( 'templates/section', 'form-section' );
+
+        elseif( get_row_layout() == 'callout' ):
+           get_template_part( 'templates/section', 'callout' );
+
+        elseif( get_row_layout() == 'ready_bar' ):
+           get_template_part( 'templates/section', 'ready-bar' );
+
+        elseif( get_row_layout() == 'portfolio_excerpt' ):
+           get_template_part( 'templates/section', 'portfolio-excerpt' );
         endif;
 
     endwhile; endif;
@@ -68,11 +80,6 @@ if( have_rows('template_blocks') ):
 // endif;
 
 ?>
-
-
-<div>
-    <h1>Page</h1>
-</div>
 
 
 <?php get_footer(); ?>
