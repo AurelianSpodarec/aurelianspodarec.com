@@ -53,6 +53,21 @@ if( have_rows('template_blocks') ):
 
         elseif( get_row_layout() == 'portfolio_excerpt' ):
            get_template_part( 'templates/section', 'portfolio-excerpt' );
+
+        elseif( get_row_layout() == 'services_card' ):
+           get_template_part( 'templates/section', 'services-card' );
+
+        elseif( get_row_layout() == 'about_author' ):
+           get_template_part( 'templates/section', 'about-author' );
+
+        elseif( get_row_layout() == 'work_featured' ):
+           get_template_part( 'templates/section', 'work-featured' );
+
+        elseif( get_row_layout() == 'work_all' ):
+           get_template_part( 'templates/section', 'work-all' );
+
+        elseif( get_row_layout() == 'work_tab' ):
+           get_template_part( 'templates/section', 'work-tab' );
         endif;
 
     endwhile; endif;

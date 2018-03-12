@@ -75,30 +75,79 @@ window.onload = function() {
 
  	
 
-		//TABS
+
+// function parallaxEffect() {
+// 	var scroll = window.pageYOffset; 
+// 	parallax.style.transform = 'translate3d(0, ' + scroll * .2 +'px,0)';
+// }
+  
+// window.addEventListener('scroll', parallaxEffect);
+  
+	var parallax = document.getElementsByClassName('js-parallax')[0];
+	var xScrollPosition;
+    var yScrollPosition;
+
+ 	function setTranslate(xPos, yPos, el) {
+        el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
+    }
+   
+    function scrollLoop() {
+        xScrollPosition = window.scrollX;
+        yScrollPosition = window.scrollY;
+ 
+        setTranslate(0, yScrollPosition * -0.2, parallax);
+
+    }
+ 	window.addEventListener("scroll", scrollLoop, false);
+
+
+
+  var parallax = document.getElementsByClassName('js-parallax');
+  var xScrollPosition;
+  var yScrollPosition;
+
+ 	function setTranslate(xPos, yPos, el) {
+        el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
+    }
+   
+ 
+	function scrollLoop() {
+    	xScrollPosition = window.scrollX;
+     	yScrollPosition = window.scrollY;
+        document.querySelectorAll('.js-parallax').forEach(function (parallax) {
+          return setTranslate(0, scrollY * parallax.dataset.parallaxSpeed, parallax);
+        });
+    
+ 	}
+ 	window.addEventListener("scroll", scrollLoop, false);
+
+
+
+
+  	//TABS
 
 	// Variables 	
-  var tabLinks = document.querySelectorAll('.services-tab__link-item');
-  var tabContents = document.querySelectorAll('.services-tab__tab-item');
+  // var tabLinks = document.querySelectorAll('.services-tab__link-item');
+  // var tabContents = document.querySelectorAll('.services-tab__tab-item');
 
-  // Loop through the tab link
-  for (var i = 0; i < tabLinks.length; i++) {
-    tabLinks[i].addEventListener('click', function(e) {
-      var id = this.hash.replace('#', '');
+  // // Loop through the tab link
+  // for (var i = 0; i < tabLinks.length; i++) {
+  //   tabLinks[i].addEventListener('click', function(e) {
+  //     var id = this.hash.replace('#', '');
 
-      // Loop through the tab content
-      for (var j = 0; j < tabContents.length; j++) {
-		var tabContent = tabContents[j];
-        tabContent.classList.remove('is-visible');
-        tabLinks[j].classList.remove('is-active');
-        if (tabContent.id === id) {
-          tabContent.classList.add('is-visible');
-        }
-      }
+  //     // Loop through the tab content
+  //     for (var j = 0; j < tabContents.length; j++) {
+		// var tabContent = tabContents[j];
+  //       tabContent.classList.remove('is-visible');
+  //       tabLinks[j].classList.remove('is-active');
+  //       if (tabContent.id === id) {
+  //         tabContent.classList.add('is-visible');
+  //       }
+  //     }
 			
-      this.classList.add('is-active');
-    });
-  }
+  //     this.classList.add('is-active');
+  //   });
+  // }
 
 
 
@@ -158,7 +207,6 @@ window.onload = function() {
 	        return;
 	    }
 		var currentScroll = window.pageYOffset;
-		console.log(currentScroll);
 
 		if(currentScroll < prevScroll) {
 			siteHeader.classList.add('sticky-show');

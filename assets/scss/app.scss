@@ -44,6 +44,7 @@
 // ==========================================================================
 // 6-modules
 // ==========================================================================
+@import "6-modules/about-author";
 @import "6-modules/form-section";
 @import "6-modules/contact-info";
 @import "6-modules/main-showcase";
@@ -51,6 +52,10 @@
 @import "6-modules/services-tab";
 @import "6-modules/speciality-excerpt";
 @import "6-modules/standard";
+@import "6-modules/services-card";
+@import "6-modules/page-intro";
+@import "6-modules/work-all";
+@import "6-modules/footer-main";
 
 // ==========================================================================
 // 7-pages
@@ -99,3 +104,15 @@
 	    color: #626280;
     }
 }
+
+.portfolio-excerpt__item {
+	float: left;
+	width: 33.3333%;
+	
+	& div{
+		height: 270px;
+		    background-size: cover;
+	}
+}
+
+ 

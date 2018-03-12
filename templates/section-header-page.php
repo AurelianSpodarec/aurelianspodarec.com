@@ -1,8 +1,15 @@
-<section class="subpage-header site-header__img" style="background-image: url(<?php the_sub_field('background_image'); ?>);">
-<div class="site-header__overlay"></div>
-<h1 class="subpage-header--title text-center highlighted negative subpage-header--alternate">
-    <span>
-        <?php the_title(); ?>
-    </span>
-</h1>          
-</section> 
+<section class="page-intro">
+
+	<div class="page-intro__img js-parallax" data-parallax-speed="0.4" style="background-image: url(<?php the_sub_field('background_image'); ?>);">
+	<div class="page-intro__overlay"></div>
+
+	<div class="page-intro__content js-parallax"  data-parallax-speed="0.4">
+	<div class="page-intro__content-outer">
+
+		<h1 class="page-intro__title"><?php the_title(); ?></h1>
+		<span class="page-intro__sub-title">Explore how my design process can help your business grow and succeed.</span>
+
+	</div>
+	</div>
+	
+</section>

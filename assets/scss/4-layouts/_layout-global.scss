@@ -14,6 +14,14 @@
     &--head-fot {
         max-width: 1240px;
     }
+
+    &--wider {
+        max-width: 1220px;
+    }
+}
+
+.row {
+    @include clearfix;
 }
 
 .text-center {
