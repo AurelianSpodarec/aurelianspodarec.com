@@ -68,6 +68,9 @@ if( have_rows('template_blocks') ):
 
         elseif( get_row_layout() == 'work_tab' ):
            get_template_part( 'templates/section', 'work-tab' );
+
+        elseif( get_row_layout() == 'action_block' ):
+           get_template_part( 'templates/section', 'action-block' );
         endif;
 
     endwhile; endif;

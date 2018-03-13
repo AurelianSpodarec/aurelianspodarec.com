@@ -30,12 +30,11 @@
 	<div class="process__inner process__inner--alt">
 
 		<h2><div class="process__step-number">02</div></h2>
-		<h3>Brainstorm & Briefing</h3>
+		<h3>Planning & Preparing</h3>
 
 		<section>
 		<p>
-			This is where I understand the project at hand and the brief in more detail. 
-			I believe it’s fundamental to get to know you and your idea, so the process can run smoothly.
+			We will stay organized by using a web-based service Trello. It will show you on what needs to be done, what has to be done, what I’m currently working on, and add notes on whatever you want.
 		</p>
 		</section>
 
@@ -57,8 +56,7 @@
 
 		<section>
 		<p>
-			This is where I understand the project at hand and the brief in more detail. 
-			I believe it’s fundamental to get to know you and your idea, so the process can run smoothly.
+			This is the stage where I will deliver the build and construction of your website. I will regularly test and use my experience of agile methodologies to make sure your project is properly coded, feels and performs at maximum capacity.
 		</p>
 		</section>
 
@@ -76,12 +74,11 @@
 	<div class="process__inner process__inner--alt">
 
 		<h2><div class="process__step-number">04</div></h2>
-		<h3>Brainstorm & Briefing</h3>
+		<h3>Results & Retention</h3>
 
 		<section>
 		<p>
-			This is where I understand the project at hand and the brief in more detail. 
-			I believe it’s fundamental to get to know you and your idea, so the process can run smoothly.
+			This is the time where I will be looking if there’s anything I can make even better. Make sure that everything is performing at maximum capacity and getting the intended results you require.
 		</p>
 		</section>
 

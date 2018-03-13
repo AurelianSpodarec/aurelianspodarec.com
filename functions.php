@@ -140,3 +140,15 @@
 		    $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 			}
 		}
+
+
+
+		function projects_post_type() {
+		    $args = array(
+		        'public'    => true,
+		        'label'     => __( 'Projects'),
+		        'menu_icon' => 'dashicons-book',
+		    );
+		    register_post_type( 'projects', $args );
+		}
+		add_action( 'init', 'projects_post_type' );

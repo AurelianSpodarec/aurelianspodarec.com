@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div>
-	<h1>Indexx</h1>
+	<h1>Single</h1>
 </div>
 
 

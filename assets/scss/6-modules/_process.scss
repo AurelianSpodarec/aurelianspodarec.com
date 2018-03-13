@@ -15,7 +15,7 @@
     }
 
     & h2 {
-    	font-size: 20em;
+    	font-size: 5rem;
 	    font-weight: 700;
 	    line-height: 1;
 	    letter-spacing: 20px;
@@ -23,16 +23,24 @@
 	    position: relative;
 	    overflow: hidden;
 	    color: black;
+
+	    @include media-query(medium) {
+	    	font-size: 11rem;
+		}
     }
 
     & h3 {
-    	font-size: 5em;
-	    line-height: 1.22;
+    	font-size: 4em;
+	    line-height: 1.23;
 	    color: #ff0182;
 	    font-weight: 700;
-	    margin-bottom: 2rem;
+	    margin-bottom: 1rem;
 	    position: relative;
 	    overflow: hidden;
+
+	    @include media-query(medium) {
+	    	font-size: 5em;
+		}
     }
 
     & section {
@@ -43,7 +51,8 @@
 
     & p {
     	color: black;
-    	font-size: 2em;
+    	font-size: 1rem;
+    	line-height: 1.875;
     }
 
     &--alt {
