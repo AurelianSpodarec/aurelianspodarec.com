@@ -1,4 +1,45 @@
-<section id="services-section" class="section section--special speciality-exp section-speciality-excerpts">
+<section class="section section--special service-excerpt">
+<div class="service-excerpt__wrap">
+
+
+    <a href="#" class="service-excerpt__item" style="background-image: url('https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?w=940&h=650&auto=compress&cs=tinysrgb');">
+
+        <div class="service-excerpt__content">
+            <h2 class="service-excerpt__title">My Services</h2>
+            <button class="service-excerpt__btn">View</button>
+        </div>
+
+        <div class="service-excerpt__overlay"></div>
+
+    </a>
+
+    <a href="#" class="service-excerpt__item" style="background-image: url('https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?h=350&auto=compress&cs=tinysrgb');">
+
+        <div class="service-excerpt__content">
+            <h2 class="service-excerpt__title">The Process</h2>
+            <button class="service-excerpt__btn">View</button>
+        </div>
+
+        <div class="service-excerpt__overlay"></div>
+
+    </a>
+
+    <a href="#" class="service-excerpt__item" style="background-image: url('https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?h=350&auto=compress&cs=tinysrgb');">
+
+        <div class="service-excerpt__content">
+            <h2 class="service-excerpt__title">My Work</h2>
+            <button class="service-excerpt__btn">View</button>
+        </div>
+
+        <div class="service-excerpt__overlay"></div>
+
+    </a>
+
+
+</div>
+</section>
+
+<!-- <section id="services-section" class="section section--special speciality-exp section-speciality-excerpts">
     <h2 class="highlighted header-alternative text-center"><span>What I offer</span></h2>
 
     <div class="speciality-exp__wrapper">
@@ -38,4 +79,4 @@
     </div>
     </div>
 
-</section>
+</section> -->

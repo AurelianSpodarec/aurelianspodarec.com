@@ -143,12 +143,114 @@
 
 
 
+		// function projects_post_type() {
+		//     $args = array(
+		//         'public'    => true,
+		//         'label'     => __( 'Projects'),
+		//         'singular_name'       => __( 'Project', 'Post Type Singular Name', 'wpheirarchy' ),
+		//         'menu_icon' => 'dashicons-book',
+		//     );
+		//     register_post_type( 'projects', $args );
+		// }
+		// add_action( 'init', 'projects_post_type' );
+
+// 		function projects_post_type() {
+ 
+// // Set UI labels for Custom Post Type
+//     $labels = array(
+//         'name'                => _x( 'Projects', 'Post Type General Name', 'twentythirteen' ),
+//         'singular_name'       => _x( 'Project', 'Post Type Singular Name', 'twentythirteen' ),
+//         'menu_name'           => __( 'Projects', 'twentythirteen' ),
+//         'parent_item_colon'   => __( 'Parent Project', 'twentythirteen' ),
+//         'all_items'           => __( 'All Projects', 'twentythirteen' ),
+//         'view_item'           => __( 'View Project', 'twentythirteen' ),
+//         'add_new_item'        => __( 'Add New Project', 'twentythirteen' ),
+//         'add_new'             => __( 'Add New', 'twentythirteen' ),
+//         'edit_item'           => __( 'Edit Project', 'twentythirteen' ),
+//         'update_item'         => __( 'Update Project', 'twentythirteen' ),
+//         'search_items'        => __( 'Search Project', 'twentythirteen' ),
+//         'not_found'           => __( 'Not Found', 'twentythirteen' ),
+//         'not_found_in_trash'  => __( 'Not found in Trash', 'twentythirteen' ),
+//     );
+     
+// // Set other options for Custom Post Type
+     
+//     $args = array(
+//         'label'               => __( 'Projects', 'twentythirteen' ),
+//         'description'         => __( 'Project news and reviews', 'twentythirteen' ),
+//         'labels'              => $labels,
+//         // Features this CPT supports in Post Editor
+//         'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+//         // You can associate this CPT with a taxonomy or custom taxonomy. 
+//         'taxonomies'          => array( 'genres' ),
+//         /* A hierarchical CPT is like Pages and can have
+//         * Parent and child items. A non-hierarchical CPT
+//         * is like Posts.
+//         */ 
+//         'hierarchical'        => false,
+//         'public'              => true,
+//         'show_ui'             => true,
+//         'show_in_menu'        => true,
+//         'show_in_nav_menus'   => true,
+//         'show_in_admin_bar'   => true,
+//         'menu_position'       => 5,
+//         'can_export'          => true,
+//         'has_archive'         => true,
+//         'exclude_from_search' => false,
+//         'publicly_queryable'  => true,
+//         'capability_type'     => 'page',
+//     );
+     
+//     // Registering your Custom Post Type
+//     register_post_type( 'projects', $args );
+ 
+// }
+
+// function projects_custom_post_type() {
+//   register_post_type( 'projects',
+//     array(
+//       'labels' => array(
+//         'name' => __( 'Projects' ),
+//         'singular_name' => __( 'Project' )
+//       ),
+//       'public' => true,
+//       'has_archive' => true,
+//     )
+//   );
+// }
+// add_action( 'init', 'projects_custom_post_type' );
+
 		function projects_post_type() {
 		    $args = array(
 		        'public'    => true,
 		        'label'     => __( 'Projects'),
+		        'singular_name'       => __( 'Project', 'Post Type Singular Name', 'wpheirarchy' ),
 		        'menu_icon' => 'dashicons-book',
-		    );
+		    );	
 		    register_post_type( 'projects', $args );
 		}
 		add_action( 'init', 'projects_post_type' );
+ 
+/* Hook into the 'init' action so that the function
+* Containing our post type registration is not 
+* unnecessarily executed. 
+*/
+ 
+//add_action( 'init', 'projects_post_type', 0 );
+
+// add_filter('acf/location/rule_match/single_template', 'acf_location_rules_match_user', 10, 3);
+// function acf_location_rules_match_user( $match, $rule, $options )
+// {
+// 	$match_template = get_page_by_path('single-');
+
+// 	if($rule['operator'] == "==")
+// 	{
+// 		$match = ($match_template);
+// 	} 
+// 	else if($rule['operator'] == "!=") 
+// 	{
+// 		$match = ($match_template);
+// 	}
+
+// 	return $match;
+// }

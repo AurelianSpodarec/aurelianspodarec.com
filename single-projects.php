@@ -1,9 +1,8 @@
 <?php get_header(); ?>
 
 <div>
-	<h1>Singleeeeeeeeeeeeee</h1>
+	<h1>Single Proejcts</h1>
 </div>
-
 
 
 <?php 

@@ -1,4 +1,4 @@
-<section class="site-header--full site-header__img"  style="background-image: url(<?php the_sub_field('background_image'); ?>);">
+<section class="site-header--full site-header__img js-parallax"  data-parallax-speed="0.4" style="background-image: url(<?php the_sub_field('background_image'); ?>);">
  
    
 
@@ -9,6 +9,7 @@
     <source src="<?php echo get_template_directory_uri(); ?>/public/vd.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
     <source src="<?php echo get_template_directory_uri(); ?>/public/vd.ogv" type="video/ogv" />Your browser does not support the video tag. I suggest you upgrade your browser.
     </video>  -->
+
 
 <div class="main-showcase">
     <h3 class="main-showcase__super-header">Aurelian Spodarec</h3>
@@ -21,4 +22,5 @@
 
     <a href="#services-section" class="scroll-down visible-el animated fadeInUp">Scroll down, to see more</a>
 </div>
+
 </section>
