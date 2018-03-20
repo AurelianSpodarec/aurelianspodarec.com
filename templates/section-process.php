@@ -1,6 +1,94 @@
-<section class="section section--special process" style="background-image: url('https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?h=350&auto=compress&cs=tinysrgb');">
+<?php 
+	if( have_rows('stages') ): $i = 0;
+	$counter = 0;
+	while( have_rows('stages') ): the_row(); $i++;
+	$number = "0$i";
+
+?>
+
+
+<?php if ($counter % 2 === 0) :?>
+<section class="section section--special process" style="background-image: url('<?php the_sub_field('image'); ?>');">
+
+	<div class="process__overlay"></div>
+
+
+<div class="container">
+
+	<div class="process__outer">
+	<div class="process__inner">
+
+		<h2><div class="process__step-number"><?php echo $number; ?></div></h2>
+		<h3><?php the_sub_field('title'); ?></h3>
+
+		<section>
+		<p>
+			<?php the_sub_field('description'); ?>
+		</p>
+		</section>
+
+	</div>
+	</div>
+
+</div>
+</section>
+<?php else: ?>
+
+	<section class="section section--special process process--alt" style="background-image: url('<?php the_sub_field('image'); ?>');">
+	<div class="process__overlay process__overlay--alt"></div>	
+	<div class="container">
+
+		<div class="process__outer">
+		<div class="process__inner process__inner--alt">
+
+			<h2><div class="process__step-number"><?php echo $number; ?></div></h2>
+			<h3><?php the_sub_field('title'); ?></h3>
+
+			<section>
+			<p>
+				<?php the_sub_field('description'); ?>
+			</p>
+			</section>
+
+		</div>
+		</div>
+
+	</div>
+	</section>
+
+<?php endif; ?>
+
+<!-- <section class="section section--special process process--alt" style="background-image: url('https://images.pexels.com/photos/450278/pexels-photo-450278.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');">
+<div class="process__overlay process__overlay--alt"></div>	
+<div class="container">
+
+	<div class="process__outer">
+	<div class="process__inner process__inner--alt">
+
+		<h2><div class="process__step-number">02</div></h2>
+		<h3>Planning & Preparing</h3>
+
+		<section>
+		<p>
+			We will stay organized by using a web-based service Trello. It will show you on what needs to be done, what has to be done, what I’m currently working on, and add notes on whatever you want.
+		</p>
+		</section>
+
+	</div>
+	</div>
+
+</div>
+</section> -->
+
+<?php 
+	$counter++;
+	endwhile; 
+	endif; 
+?>
+
+<!-- <section class="section section--special process" style="background-image: url('https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?h=350&auto=compress&cs=tinysrgb');"> -->
 	<!-- or: https://images.pexels.com/photos/240223/pexels-photo-240223.jpeg?h=350&auto=compress&cs=tinysrgb -->
-<div class="process__overlay"></div>	
+<!-- <div class="process__overlay"></div>	
 <div class="container">
 
 	<div class="process__outer">
@@ -86,8 +174,5 @@
 	</div>
 
 </div>
-</section>
+</section> -->
 
-<!-- <ul class="process__list">
-<li><a href="">HELLO</a></li>
-</ul> -->

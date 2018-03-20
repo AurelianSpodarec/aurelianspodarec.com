@@ -10,7 +10,7 @@
 
 	&__item {
 		position: relative;
-		width: calc(100% / 3);
+		width: 100%;
 		height: 80vh;
 		float: left;
 		display: block;
@@ -18,6 +18,10 @@
 	    background-size: cover;
 	    background-position: center center;
 	    transition: .3s ease-in-out;
+
+	    @include media-query(medium) {
+	    	width: calc(100% / 3);
+	    }
 
 	    &:last-child {
 	    	border-right: none;
@@ -48,10 +52,14 @@
 	&__title {
 		color: white;
 		text-transform: uppercase;
-		font-size: 2.4rem;
+		font-size: 1.8rem;
 		margin-bottom: 20px;
 		padding: 10px;
 		transition: .3s ease-in-out;
+
+		@include media-query(large) {
+			font-size: 2.4rem
+		}
 
 		&:after {
 			content: "";

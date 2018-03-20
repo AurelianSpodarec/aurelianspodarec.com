@@ -13,7 +13,7 @@
 
     </a>
 
-    <a href="#" class="service-excerpt__item" style="background-image: url('https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?h=350&auto=compress&cs=tinysrgb');">
+    <a href="#" class="service-excerpt__item" style="background-image: url('https://images.pexels.com/photos/533189/pexels-photo-533189.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');">
 
         <div class="service-excerpt__content">
             <h2 class="service-excerpt__title">The Process</h2>

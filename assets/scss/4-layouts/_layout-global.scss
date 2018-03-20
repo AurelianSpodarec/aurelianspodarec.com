@@ -1,6 +1,12 @@
 // ==========================================================================
 // #Layout Global
 // ==========================================================================
+//
+//  Table of Content
+//  
+//  - Containers
+//  - Row
+//  -
 
 .container {
     max-width: 1070px;
@@ -18,14 +24,6 @@
     &--wider {
         max-width: 1220px;
     }
-}
-
-.row {
-    @include clearfix;
-}
-
-.text-center {
-	text-align: center;
 }
 
 .section {
@@ -55,3 +53,4 @@
 	}
 
 }
+

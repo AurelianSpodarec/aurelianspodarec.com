@@ -57,7 +57,7 @@
         border: 0;
 	    width: 170px;
 	    height: 10px;
-	    background: #e04347;
+	    background: #f2a538;
 	    margin: 0 auto 12px;
 		@include media-query(large) {
 
@@ -77,6 +77,18 @@
 			font-size: 1.6875em;
 	    	line-height: 36px;   
 		}
+	}
+
+	&__btn {
+		font-size: 14px;
+	    font-weight: 500;
+	    padding: 10px 28px;
+	    font-weight: bold;
+	    background: none;
+	    text-transform: uppercase;
+	    color: white;
+	    border: 2px solid #f2a538;
+	    transition: .3s ease-in-out;
 	}
 
 

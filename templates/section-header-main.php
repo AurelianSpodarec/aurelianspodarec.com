@@ -12,13 +12,13 @@
 
 
 <div class="main-showcase">
-    <h3 class="main-showcase__super-header">Aurelian Spodarec</h3>
+    <h3 class="main-showcase__super-header">Awesome Dev</h3>
     <h1 class="main-showcase__super-subheader">Front-end WordPress Developer</h1>
     <hr class="main-showcase__super-hr">
     <!-- <h2 class="main-showcase__super-subheader-alt">Creating fenomenal high quality websites</h2> -->
 
-    <button>My Portfolio</button>
-    <button>Let's Talk</button>
+    <button class="main-showcase__btn">My Portfolio</button>
+    <button class="main-showcase__btn">Let's Talk</button>
 
     <a href="#services-section" class="scroll-down visible-el animated fadeInUp">Scroll down, to see more</a>
 </div>

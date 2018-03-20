@@ -71,6 +71,9 @@ if( have_rows('template_blocks') ):
 
         elseif( get_row_layout() == 'action_block' ):
            get_template_part( 'templates/section', 'action-block' );
+
+        elseif( get_row_layout() == 'about_excerpt' ):
+           get_template_part( 'templates/section', 'about-excerpt' );
         endif;
 
     endwhile; endif;
