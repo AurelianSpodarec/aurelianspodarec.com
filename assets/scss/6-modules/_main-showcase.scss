@@ -4,17 +4,17 @@
 
 .main-showcase {
 	width: 100%;
-    padding-top: 7.75em;
-    padding-bottom: 3.75em;
     text-align: center;
-    position: relative;
-   
+    @include absolute(top 50%);
+    transform: translateY(-10%);
+
     @include media-query(large) {
+        padding-top: 7.75em;
+   		padding-bottom: 3.75em;
 	    padding: 0;
 	    transform: translateY(-50%);
 	    height: 240px;
 	    width: 100%;
-	    @include absolute(top 50%);
 	    -webkit-animation-delay: 1.75s;
 	    animation-delay: 1.75s;
 	    -webkit-animation-duration: .7s;

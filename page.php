@@ -21,17 +21,11 @@ if( have_rows('template_blocks') ):
         elseif( get_row_layout() == 'contact' ):
            get_template_part( 'templates/section', 'contact' );
 
-        elseif( get_row_layout() == 'services_tabs' ):
-           get_template_part( 'templates/section', 'services-tabs' );
-
         elseif( get_row_layout() == 'standards' ):
            get_template_part( 'templates/section', 'standards' );
 
         elseif( get_row_layout() == 'contact' ):
            get_template_part( 'templates/section', 'contact' );
-
-        elseif( get_row_layout() == 'footer' ):
-           get_template_part( 'templates/section', 'footer' );
 
         elseif( get_row_layout() == 'bar_secondary' ):
            get_template_part( 'templates/section', 'bar-secondary' );
@@ -48,9 +42,6 @@ if( have_rows('template_blocks') ):
         elseif( get_row_layout() == 'callout' ):
            get_template_part( 'templates/section', 'callout' );
 
-        elseif( get_row_layout() == 'ready_bar' ):
-           get_template_part( 'templates/section', 'ready-bar' );
-
         elseif( get_row_layout() == 'portfolio_excerpt' ):
            get_template_part( 'templates/section', 'portfolio-excerpt' );
 
@@ -65,9 +56,6 @@ if( have_rows('template_blocks') ):
 
         elseif( get_row_layout() == 'work_all' ):
            get_template_part( 'templates/section', 'work-all' );
-
-        elseif( get_row_layout() == 'work_tab' ):
-           get_template_part( 'templates/section', 'work-tab' );
 
         elseif( get_row_layout() == 'action_block' ):
            get_template_part( 'templates/section', 'action-block' );

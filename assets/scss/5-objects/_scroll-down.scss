@@ -9,11 +9,8 @@
     text-decoration: none;
     width: 250px;
     padding-top: 95px;
+    @include absolute(top 100% left 50% bottom 25px);
     text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    bottom: 25px;
     margin-left: -125px;
     font-size: 12px;
     outline: 0;
@@ -31,9 +28,7 @@
 
     &:before {
         content: ' ';
-        position: absolute;
-        left: 50%;
-        top: 30px;
+        @include absolute(top 30px left 50%);
         width: 37px;
         height: 19px;
         display: block;
@@ -47,12 +42,9 @@
 
     &:after {
         content: ' ';
-        position: absolute;
-        left: 50%;
-        top: 0;
+        @include absolute(top 0 left 50%);
         margin-left: -45px;
-        width: 90px;
-        height: 90px;
+        @include box(90px);
         border: 4px solid #e2e2e2;
         border-radius: 50%;
     }

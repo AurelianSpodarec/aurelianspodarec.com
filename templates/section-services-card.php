@@ -1,9 +1,18 @@
 <section class="section">
-<div class="container">
+<div class="container container--wider">
 <div class="row">
 
 
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	 <?php
+		$args = array( 
+		  'post_type' => 'services'
+		);
+
+		$loop = new WP_Query( $args );
+	?>
+	
+
+	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 	<article class="services-card">
 	<a href="#">
 	<div class="services-card__outer">
@@ -25,11 +34,8 @@
 	</div>
 	</a>
 	</article>
- 	<?php endwhile; else : ?>
-
-	No the loop in taxonomy doesn't work
-
-	<?php endif; ?>
+ 	<?php endwhile; ?>
+	<?php wp_reset_postdata(); ?>
 
 </div>
 </div>

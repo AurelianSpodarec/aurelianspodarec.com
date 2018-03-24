@@ -15,10 +15,14 @@
     	background: #262626;
     	-webkit-box-shadow: 0 0 5px 2px rgba(51,51,51,.3);
     	box-shadow: 0 0 5px 2px rgba(51,51,51,.3);
+
+    	& .site-header__head--inner {
+    		padding-top: 0;
+    	}
     }
     
     &.sticky-show {
-    	@include transform(translateY(0));
+    	@include transform(translateY(0));	
     }
 
     &__img {
@@ -27,6 +31,7 @@
 
     &--full {
     	position: relative;
+    	height: 100vh;
 	    @include media-query(large) {
 	    	min-height: 600px;
 	    	height: 100vh;
@@ -49,13 +54,18 @@
  		position: relative;
  		@include clearfix;
  		line-height: 2;
+
+ 		&--inner {
+ 		    padding-top: 13px;
+ 		}
 	}
 
 	&__logo {
-		font-size: 1.875em;
+		position: absolute;
+    	top: 5px;
+		font-size: 1.475em;
 	    font-weight: bold;
 	    display: inline-block;
-	    float: left;
 	    -webkit-animation-duration: .8s;
 	            animation-duration: .7s;
 	            animation-duration: .8s;
@@ -63,6 +73,13 @@
 	            animation-delay: 1.2s;
 	    text-transform: uppercase;
 	    color: white;
+
+	    @include media-query(medium) {
+	    	font-size: 1.875em;
+	    	top: unset;
+	    	position: relative;
+		    float: left;
+	    }
 	}
 
 	&__toggle-button {

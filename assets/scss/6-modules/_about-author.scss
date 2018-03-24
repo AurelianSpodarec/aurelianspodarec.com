@@ -24,21 +24,34 @@
 	}
 
 	&__author-img-wrap {
-		float: left;
-		width:  calc(37.3333% - 3.5%);
-		margin-right: 3.5%;
+		width: 100%;
+
+		@include media-query(medium) {
+			float: left;
+			width:  calc(37.3333% - 3.5%);
+			margin-right: 3.5%;
+		}
 	}
 
 	&__author-img {
-		height: 600px;
 	    background-size: contain;
 	    background-repeat: no-repeat;
-	    width: 100%;
+	    max-width: 100%;
+	    min-height: 360px;
+	    overflow: hidden;
+
+	    @include media-query(medium) {
+			height: 600px;
+	    }
 	}
 
 	&__author-description {
-		float: left;
-		width: 62.6666%;
+		width: 100%;
+
+		@include media-query(medium) {
+			float: left;
+			width: 62.6666%;
+		}
 	}
 
 }

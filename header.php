@@ -20,8 +20,8 @@
 
     <header class="site-header">
     <div class="site-header__head">
-    <div class="container container--head-fot site-header--relative-wrapper">
-
+    <div class="container container--wider site-header--relative-wrapper">
+    <div class="site-header__head--inner">
 
         <a class="site-header__logo" href="">Aurelian Spodarec</a>
         <button class="site-header__toggle-button">
@@ -60,6 +60,7 @@
         </footer>
         </div>
 
+    </div>
     </div><!-- /container -->
     </div><!-- /site-header__head -->
     </header>

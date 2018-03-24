@@ -230,6 +230,18 @@
 		    register_post_type( 'projects', $args );
 		}
 		add_action( 'init', 'projects_post_type' );
+
+
+		function services_post_type() {
+		    $args = array(
+		        'public'    => true,
+		        'label'     => __( 'Services'),
+		        'singular_name'       => __( 'Service', 'Post Type Singular Name', 'wpheirarchy' ),
+		        'menu_icon' => 'dashicons-book',
+		    );	
+		    register_post_type( 'services', $args );
+		}
+		add_action( 'init', 'services_post_type' );
  
 /* Hook into the 'init' action so that the function
 * Containing our post type registration is not 
