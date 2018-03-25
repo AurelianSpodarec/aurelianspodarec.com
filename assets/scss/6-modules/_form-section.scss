@@ -42,14 +42,18 @@
 
 	&__list {
 		position: relative;
-    	padding-right: calc(50% + 8px);
 
+		@include media-query(medium) {
+    		padding-right: calc(50% + 8px);
+    	}
 
 		& li:nth-child(4) {
+			@include media-query(medium) {
 			width: calc(50% - 8px);
 		    position: absolute;
 		    top: 0;
 		    right: 0;
+			}
 		}
 
 		& input {
@@ -93,4 +97,15 @@
 	}
 
 
+}
+
+span.wpcf7-not-valid-tip, 
+.wpcf7-validation-errors, 
+div.wpcf7-response-output,
+ {
+    color: $color-brand;
+    padding-bottom: 10px;
+    font-size: 14px;
+    border: none;
+    margin-top: -10px;
 }

@@ -1,6 +1,10 @@
 const css = require('../scss/app.scss');
 
+var body = document.querySelector('body');
 
+window.addEventListener('load', function(){
+  body.classList.add('-loaded');
+})
 
 window.onload = function() {
 

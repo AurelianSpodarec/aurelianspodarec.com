@@ -17,6 +17,41 @@
 </head>
 <body <?php body_class(); ?>>
 
+    <?php 
+
+        $user_id = 1;
+    ?>
+
+    <div class="loader">
+    <div class="loader__bg"></div>
+
+    <div class="loader__content">
+        <div class="loader__main-cube">
+            <div class="loader__cube--1 loader__cube"></div>
+            <div class="loader__cube--2 loader__cube"></div>
+            <div class="loader__cube--4 loader__cube"></div>
+            <div class="loader__cube--3 loader__cube"></div>
+        </div>
+        <span class="loader__text" data-name="Loading">Loading...</span>
+    </div>
+    </div>
+
+
+   <!--  <div class="loader-screen">
+    <div class="loader-screen__bg"></div>
+
+    <div class="loader-center">
+    <div class="loader">
+        <div class="loader__cube--1 loader__cube"></div>
+        <div class="loader__cube--2 loader__cube"></div>
+        <div class="loader__cube--4 loader__cube"></div>
+        <div class="loader__cube--3 loader__cube"></div>
+    </div>
+    <span class="loader__text" data-name="Loading">Loading...</span>
+    </div>
+    </div> -->
+
+
 
     <header class="site-header">
     <div class="site-header__head">
@@ -44,18 +79,19 @@
         ?>  
         </nav>
 
+        
+
         <footer class="site-nav__footer">
-            <a href="">aurelianx@gmail.com</a>
-            <p>07507 452 2524</p>
-            <p>
-                Developer,
-                <br>
-                Blogger,
-                <br>
-                Teacher,
-                <br>
-                Speaker
-            </p>
+            <a href=""><?php the_field('contact_email', 'user_'.$user_id); ?></a>
+            <p><?php the_field('mobile_number', 'user_'.$user_id); ?></p>
+            <ul>
+               <?php
+                if( have_rows('word_block', 'user_'.$user_id) ):
+                    while ( have_rows('word_block', 'user_'.$user_id) ) : the_row();
+                ?>
+                    <li><?php the_sub_field('word'); ?></li>
+                <?php endwhile; endif; ?>
+            </ul>
             <p>&copy; Aurelian Spodarec</p>
         </footer>
         </div>

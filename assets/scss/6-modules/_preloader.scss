@@ -1,0 +1,107 @@
+// ==========================================================================
+// # Process
+// ==========================================================================
+
+// body.-loaded .loader {
+//     opacity: 0;
+//     visibility: hidden;
+// }
+
+body.-loaded .loader {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.loader {
+	position: relative;
+    overflow: hidden;
+    background: #2d2d3b;
+    color: #fff;
+    opacity: 1;
+    visibility: visible;
+    height: 100vh;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+    -webkit-transition-delay: 4s;
+    transition-delay: 4s;
+
+	&__bg {
+		@include absolute(top 0 right 0 bottom 0 left 0);
+	    background: #2d2d3b;
+	    z-index: 9999;
+	    @include box(100%);
+	}
+
+	&__content {
+		height: 100%;
+		@include fixed(top 50% left 50%);
+	    z-index: 10001;
+	}
+
+	&__main-cube {
+		-webkit-transform: translate(-50%,-50%) rotate(45deg);
+	    transform: translate(-50%,-50%) rotate(45deg);
+	    z-index: 10000;
+	    opacity: 1;
+	    -webkit-transition: opacity .2s ease-in-out,visibility .2s ease-in-out;
+	    transition: opacity .2s ease-in-out,visibility .2s ease-in-out;
+	    visibility: visible;
+	    @include box(40px);
+	}
+
+	&__cube {
+		float: left;
+	    @include box(50%);
+	    position: relative;
+	    -webkit-transform: scale(1.1);
+	    transform: scale(1.1);
+
+	     &:before {
+		    content: "";
+		    @include absolute(top 0 left 0);
+		    @include box(100%);
+		    background-color: $color-brand;
+		    -webkit-animation: loader__foldCubeAngle 2.4s infinite linear both;
+		    animation: loader__foldCubeAngle 2.4s infinite linear both;
+		    -webkit-transform-origin: 100% 100%;
+		    transform-origin: 100% 100%;
+		}
+
+	    &--2 {
+	        transform: scale(1.1) rotate(90deg);
+
+	        &:before {
+				animation-delay: .3s;
+	        }
+	    }
+
+	    &--3 {
+	        transform: scale(1.1) rotate(180deg);
+
+	        &:before {
+	        	animation-delay: .6s;
+	        }
+	    }
+
+	    &--4 {
+	        transform: scale(1.1) rotate(270deg);
+
+	        &:before {
+	        	animation-delay: .9s;
+	        }
+	    } 
+	}
+
+	&__text {
+		z-index: 10000;
+	    color: white;
+	    font-size: 12px;
+	    letter-spacing: 0.1em;
+	    display: block;
+	    position: relative;
+	    @include transform(translate(-50%, 50%));
+	    animation: text 0.5s ease infinite alternate;
+	}
+
+}

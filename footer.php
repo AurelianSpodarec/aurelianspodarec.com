@@ -13,13 +13,13 @@
 	        <div class="footer-main__top--col">
 	        <ul class="footer-main__top-contact-list">
 	            <li>
-	            <a href="tel:123456789">
+	            <a href="tel: <?php the_field('mobile_number', 'user_'.$user_id); ?>">
 	                <i class="fa fa-phone" aria-hidden="true"></i>
 	                <span>Mobile</span>
 	            </a>
 	            </li>
 	            <li>
-	            <a  href="mailto:asd@gmail.com">
+	            <a  href="mailto: <?php the_field('contact_email', 'user_'.$user_id); ?>">
 	                <i class="fa fa-envelope" aria-hidden="true"></i>
 	                <span>Email Me</span>
 	            </a>

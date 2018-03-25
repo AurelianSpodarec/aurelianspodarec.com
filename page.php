@@ -1,7 +1,14 @@
 <?php get_header(); ?>
 
 
+<!-- 
 
+Header Main
+Header Page
+Contact Form
+Empty Bar -> Intro
+
+ -->
 
 <?php 
 
@@ -18,14 +25,8 @@ if( have_rows('template_blocks') ):
         elseif( get_row_layout() == 'services_excerpt' ):
            get_template_part( 'templates/section', 'services-excerpt' );
 
-        elseif( get_row_layout() == 'contact' ):
-           get_template_part( 'templates/section', 'contact' );
-
         elseif( get_row_layout() == 'standards' ):
            get_template_part( 'templates/section', 'standards' );
-
-        elseif( get_row_layout() == 'contact' ):
-           get_template_part( 'templates/section', 'contact' );
 
         elseif( get_row_layout() == 'bar_secondary' ):
            get_template_part( 'templates/section', 'bar-secondary' );
@@ -33,11 +34,11 @@ if( have_rows('template_blocks') ):
         elseif( get_row_layout() == 'process' ):
            get_template_part( 'templates/section', 'process' );
 
-        elseif( get_row_layout() == 'empty_bar' ):
-           get_template_part( 'templates/section', 'empty-bar' );
+        elseif( get_row_layout() == 'intro' ):
+           get_template_part( 'templates/section', 'intro' );
 
-        elseif( get_row_layout() == 'form_section' ):
-           get_template_part( 'templates/section', 'form-section' );
+        elseif( get_row_layout() == 'contact_form' ):
+           get_template_part( 'templates/section', 'contact-form' );
 
         elseif( get_row_layout() == 'callout' ):
            get_template_part( 'templates/section', 'callout' );

@@ -69,7 +69,11 @@
 
 const css = __webpack_require__(1);
 
+var body = document.querySelector('body');
 
+window.addEventListener('load', function(){
+  body.classList.add('-loaded');
+})
 
 window.onload = function() {
 
