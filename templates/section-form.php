@@ -1,4 +1,4 @@
-<section class="section section-contact form-section text-center">
+<section class="section section-contact form-section">
 <div class="container">
 
 	<h2 class="form-section__title"><div>Fancy a chat?</div></h2>

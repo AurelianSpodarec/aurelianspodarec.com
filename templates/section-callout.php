@@ -1,6 +1,6 @@
-<section class="section text-center" style="background-color: #ff0182; color: white; height: 50vh">
+<section class="section callout">
 
-<p style="color: white; font-size: 2.4rem; font-weight: bold;">
+<p class="callout__title">
 	The big question is...<br>
 	Are you ready to proceed with me?
 </p>

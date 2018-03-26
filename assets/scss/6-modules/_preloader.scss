@@ -27,7 +27,7 @@ body.-loaded .loader {
     transition-delay: 4s;
 
 	&__bg {
-		@include absolute(top 0 right 0 bottom 0 left 0);
+		@include fixed(top 0 right 0 bottom 0 left 0);
 	    background: #2d2d3b;
 	    z-index: 9999;
 	    @include box(100%);

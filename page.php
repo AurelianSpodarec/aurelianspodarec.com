@@ -1,15 +1,6 @@
 <?php get_header(); ?>
 
 
-<!-- 
-
-Header Main
-Header Page
-Contact Form
-Empty Bar -> Intro
-
- -->
-
 <?php 
 
 if( have_rows('template_blocks') ):
@@ -37,8 +28,11 @@ if( have_rows('template_blocks') ):
         elseif( get_row_layout() == 'intro' ):
            get_template_part( 'templates/section', 'intro' );
 
-        elseif( get_row_layout() == 'contact_form' ):
-           get_template_part( 'templates/section', 'contact-form' );
+       elseif( get_row_layout() == 'form_alt' ):
+           get_template_part( 'templates/section', 'form-alt' );
+
+        elseif( get_row_layout() == 'form' ):
+           get_template_part( 'templates/section', 'form' );
 
         elseif( get_row_layout() == 'callout' ):
            get_template_part( 'templates/section', 'callout' );

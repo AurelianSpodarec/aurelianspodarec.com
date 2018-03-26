@@ -3,22 +3,28 @@
 // ==========================================================================
 
 .main-showcase {
+	top: 50%;
 	width: 100%;
-    text-align: center;
-    @include absolute(top 50%);
-    transform: translateY(-10%);
+	position: absolute;
+	
+	&__inner {
+		width: 100%;
+	    text-align: center;
+	    @include absolute(top 50%);
+	    transform: translateY(-10%);
 
-    @include media-query(large) {
-        padding-top: 7.75em;
-   		padding-bottom: 3.75em;
-	    padding: 0;
-	    transform: translateY(-50%);
-	    height: 240px;
-	    width: 100%;
-	    -webkit-animation-delay: 1.75s;
-	    animation-delay: 1.75s;
-	    -webkit-animation-duration: .7s;
-	    animation-duration: .7s;
+	    @include media-query(large) {
+	        padding-top: 7.75em;
+	   		padding-bottom: 3.75em;
+		    padding: 0;
+		    transform: translateY(-50%);
+		    height: 240px;
+		    width: 100%;
+		    -webkit-animation-delay: 1.75s;
+		    animation-delay: 1.75s;
+		    -webkit-animation-duration: .7s;
+		    animation-duration: .7s;
+		}
 	}
 
 	&__super-header {

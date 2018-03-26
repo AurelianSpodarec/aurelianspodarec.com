@@ -2,7 +2,6 @@
 <div class="container container--wider">
 <div class="work-all__wrap">
 
-  	
   <?php
 		$args = array( 
 		  'post_type' => 'projects'
@@ -10,7 +9,6 @@
 
 		$loop = new WP_Query( $args );
 	?>
-	
 
 	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 	<article class="work-all__item">

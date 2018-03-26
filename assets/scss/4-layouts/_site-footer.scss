@@ -1,3 +1,112 @@
 // ==========================================================================
-// #Site Footer
+// #Site footer
 // ==========================================================================
+
+.footer-main {
+	background-color: #262626;
+	padding: 2rem 0;
+	text-align: center;
+
+	@include media-query(medium) {
+		text-align: unset;
+	}
+
+	&__row {
+		@include clearfix;
+	}
+
+	&__top {
+		line-height: 2em;
+
+		&--col {
+			width: 100%;
+			@include media-query(medium) {
+				width: 50%;
+				float: left;
+			}
+		}
+	}
+
+	&__top-logo {
+		font-weight: bold;
+		font-size: 1.9rem;
+		text-transform: uppercase;
+		color: white;
+	}
+
+	&__top-contact-list {
+		text-align: center;
+
+		@include media-query(medium) {
+	    	text-align: right;
+		}
+
+		& li {
+		    display: inline-block;
+		    margin-left: 30px;
+
+		    &:first-child {
+		    	margin-left: unset;
+		    }
+
+		    & a {
+	    	    font-family: "Roboto Slab",serif;
+			    font-size: 16px;
+			    font-size: 1.2rem;
+			    color: white;
+		    }
+
+			& span {
+		    	margin: 0;
+			    padding: 0;
+			    border: 0;
+			    font-size: 100%;
+			    font: inherit;
+			    color: white;
+		    }
+
+		    & i { 
+		    	padding-right: 10px;
+			    font-size: 20px;
+			    font-size: 1.2rem;
+		    }
+
+
+		}
+	}
+
+	&__bottom {
+		font-size: .8rem;
+	    font-weight: 500;
+	    
+	    & p {
+	    	color: white;
+	    }
+
+		&--col {
+			width: 100%;
+			@include media-query(medium) {
+				width: 50%;
+				float: left;
+			}
+		}
+	}
+
+	&__bottom-links {
+		text-align: center;
+		
+		@include media-query(medium) {
+	    	text-align: right;
+		}
+
+		& li {
+			display: inline-block;
+			margin-left: 30px;
+		}
+
+		& a {
+			color: white;
+		}
+	}
+
+}

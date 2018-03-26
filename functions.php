@@ -225,7 +225,7 @@
 		        'public'    => true,
 		        'label'     => __( 'Projects'),
 		        'singular_name'       => __( 'Project', 'Post Type Singular Name', 'wpheirarchy' ),
-		        'menu_icon' => 'dashicons-book',
+		        'menu_icon' => 'dashicons-welcome-add-page',
 		    );	
 		    register_post_type( 'projects', $args );
 		}
@@ -237,7 +237,7 @@
 		        'public'    => true,
 		        'label'     => __( 'Services'),
 		        'singular_name'       => __( 'Service', 'Post Type Singular Name', 'wpheirarchy' ),
-		        'menu_icon' => 'dashicons-book',
+		        'menu_icon' => 'dashicons-welcome-write-blog',
 		    );	
 		    register_post_type( 'services', $args );
 		}

@@ -18,6 +18,7 @@
 
     	& .site-header__head--inner {
     		padding-top: 0;
+    		@include transition(.25s ease-in-out); 
     	}
     }
     
@@ -34,7 +35,6 @@
     	height: 100vh;
 	    @include media-query(large) {
 	    	min-height: 600px;
-	    	height: 100vh;
 	    }
 	}
 

@@ -2,9 +2,7 @@
 <div class="container">
 
 	<?php if( have_rows('about') ): 
-
-	while( have_rows('about') ): the_row(); ?>
-
+		while( have_rows('about') ): the_row(); ?>
 
 	<div class="row">
 	<div class="about__author-img-wrap">
@@ -19,10 +17,7 @@
 		<?php the_sub_field('bio'); ?>
 	</div>
 	</div>
-
-	<?php endwhile; ?>
-	
-	<?php endif; ?>
+	<?php endwhile; endif;?>
 
 </div>
 </section>

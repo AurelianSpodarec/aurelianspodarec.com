@@ -18,7 +18,6 @@
 <body <?php body_class(); ?>>
 
     <?php 
-
         $user_id = 1;
     ?>
 
@@ -35,23 +34,6 @@
         <span class="loader__text" data-name="Loading">Loading...</span>
     </div>
     </div>
-
-
-   <!--  <div class="loader-screen">
-    <div class="loader-screen__bg"></div>
-
-    <div class="loader-center">
-    <div class="loader">
-        <div class="loader__cube--1 loader__cube"></div>
-        <div class="loader__cube--2 loader__cube"></div>
-        <div class="loader__cube--4 loader__cube"></div>
-        <div class="loader__cube--3 loader__cube"></div>
-    </div>
-    <span class="loader__text" data-name="Loading">Loading...</span>
-    </div>
-    </div> -->
-
-
 
     <header class="site-header">
     <div class="site-header__head">
