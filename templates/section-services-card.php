@@ -18,7 +18,7 @@
 	<div class="services-card__outer">
 
 		<header class="services-card__header">
-			<i class="services-card__icon fa fa-window-restore"></i>
+			<i class="services-card__icon <?php the_field('icon'); ?>"></i>
 		</header>
 
 		<section class="services-card__section">

@@ -7,7 +7,7 @@
     <meta name="charset" content="UTF-8">
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width" />
-    <title>Webpack to WordPress Starter Theme</title>
+    <title><?php  wp_title( '-', true, 'right' ) . bloginfo( 'name' ); ?></title>
     
     <!-- FONT AWESOME | REPLACE WITH NPM IF YOU WANT-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -64,14 +64,14 @@
         
 
         <footer class="site-nav__footer">
-            <a href=""><?php the_field('contact_email', 'user_'.$user_id); ?></a>
-            <p><?php the_field('mobile_number', 'user_'.$user_id); ?></p>
+            <a href=""><?php the_field( 'contact_email', 'user_'.$user_id ); ?></a>
+            <p><?php the_field( 'mobile_number', 'user_'.$user_id ); ?></p>
             <ul>
                <?php
-                if( have_rows('word_block', 'user_'.$user_id) ):
-                    while ( have_rows('word_block', 'user_'.$user_id) ) : the_row();
+                if( have_rows( 'word_block', 'user_'.$user_id ) ):
+                    while ( have_rows('word_block', 'user_'.$user_id ) ) : the_row();
                 ?>
-                    <li><?php the_sub_field('word'); ?></li>
+                    <li><?php the_sub_field( 'word' ); ?></li>
                 <?php endwhile; endif; ?>
             </ul>
             <p>&copy; Aurelian Spodarec</p>

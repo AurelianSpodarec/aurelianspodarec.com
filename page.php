@@ -28,7 +28,10 @@ if( have_rows('template_blocks') ):
         elseif( get_row_layout() == 'intro' ):
            get_template_part( 'templates/section', 'intro' );
 
-       elseif( get_row_layout() == 'form_alt' ):
+        elseif( get_row_layout() == 'faq' ):
+           get_template_part( 'templates/section', 'faq' );
+
+        elseif( get_row_layout() == 'form_alt' ):
            get_template_part( 'templates/section', 'form-alt' );
 
         elseif( get_row_layout() == 'form' ):
@@ -48,6 +51,9 @@ if( have_rows('template_blocks') ):
 
         elseif( get_row_layout() == 'work_featured' ):
            get_template_part( 'templates/section', 'work-featured' );
+
+        elseif( get_row_layout() == 'text_block' ):
+           get_template_part( 'templates/section', 'text-block' );
 
         elseif( get_row_layout() == 'work_all' ):
            get_template_part( 'templates/section', 'work-all' );
