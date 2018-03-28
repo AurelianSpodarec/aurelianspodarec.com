@@ -549,11 +549,12 @@ blockquote cite {
 
 .footer-main {
   background-color: #262626;
-  padding: 2rem 0;
+  padding: 2rem 0 1rem;
   text-align: center; }
   @media (min-width: 720px) {
     .footer-main {
-      text-align: unset; } }
+      text-align: unset;
+      padding: 2rem 0; } }
   .footer-main__row::after {
     clear: both;
     content: ' ';
@@ -566,19 +567,29 @@ blockquote cite {
         .footer-main__top--col {
           width: 50%;
           float: left; } }
+  .footer-main__copyright {
+    margin-bottom: 1rem; }
+    @media (min-width: 720px) {
+      .footer-main__copyright {
+        margin-bottom: unset; } }
   .footer-main__top-logo {
     font-weight: bold;
     font-size: 1.9rem;
     text-transform: uppercase;
     color: white; }
   .footer-main__top-contact-list {
-    text-align: center; }
+    text-align: center;
+    margin-top: 10px; }
     @media (min-width: 720px) {
       .footer-main__top-contact-list {
+        margin-top: 0;
         text-align: right; } }
     .footer-main__top-contact-list li {
       display: inline-block;
-      margin-left: 30px; }
+      margin-left: 15px; }
+      @media (min-width: 720px) {
+        .footer-main__top-contact-list li {
+          margin-left: 30px; } }
       .footer-main__top-contact-list li:first-child {
         margin-left: unset; }
       .footer-main__top-contact-list li a {
@@ -592,7 +603,11 @@ blockquote cite {
         border: 0;
         font-size: 100%;
         font: inherit;
-        color: white; }
+        color: white;
+        display: none; }
+        @media (min-width: 720px) {
+          .footer-main__top-contact-list li span {
+            display: inline-block; } }
       .footer-main__top-contact-list li i {
         padding-right: 10px;
         font-size: 20px;
@@ -614,10 +629,33 @@ blockquote cite {
       .footer-main__bottom-links {
         text-align: right; } }
     .footer-main__bottom-links li {
-      display: inline-block;
-      margin-left: 30px; }
+      display: block; }
+      @media (min-width: 720px) {
+        .footer-main__bottom-links li {
+          display: inline-block;
+          margin-left: 30px; } }
     .footer-main__bottom-links a {
-      color: white; }
+      display: block;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      font-size: 12px;
+      transition: all 0.2s;
+      position: relative;
+      border-radius: 40px;
+      letter-spacing: 0em;
+      color: #808080; }
+      .footer-main__bottom-links a:hover {
+        background: #333;
+        color: #FFF; }
+        @media (min-width: 720px) {
+          .footer-main__bottom-links a:hover {
+            background: unset; } }
+      @media (min-width: 720px) {
+        .footer-main__bottom-links a {
+          height: unset;
+          line-height: unset;
+          color: white; } }
 
 .site-header {
   background-size: cover;
@@ -652,6 +690,20 @@ blockquote cite {
       -ms-transition: 0.25s ease-in-out;
       -o-transition: 0.25s ease-in-out;
       transition: 0.25s ease-in-out; }
+    .site-header.is-sticky .site-nav__link:hover {
+      border-color: #404040; }
+    .site-header.is-sticky .highlighted-menu a {
+      background: #e08300;
+      border-color: #e08300;
+      color: white;
+      -webkit-transition: 0.25s ease-in-out;
+      -moz-transition: 0.25s ease-in-out;
+      -ms-transition: 0.25s ease-in-out;
+      -o-transition: 0.25s ease-in-out;
+      transition: 0.25s ease-in-out; }
+      .site-header.is-sticky .highlighted-menu a:hover {
+        background: #f2a538;
+        border-color: #f2a538; }
   .site-header.sticky-show {
     -moz-transform: translateY(0);
     -o-transform: translateY(0);
@@ -762,6 +814,19 @@ blockquote cite {
     .site-header--toggle-span:last-child {
       top: 22px; }
 
+.highlighted-menu a {
+  color: #f2a538;
+  border-color: #f2a538;
+  font-weight: bold;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -ms-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out; }
+  .highlighted-menu a:hover {
+    color: #e08300;
+    border-color: #e08300; }
+
 .site-nav {
   position: absolute;
   top: 0;
@@ -810,8 +875,7 @@ blockquote cite {
     display: block; }
     @media (min-width: 960px) {
       .site-nav__item {
-        display: inline-block;
-        margin: 14px 12px; } }
+        display: inline-block; } }
   .site-nav__link {
     font-size: 1.2rem;
     line-height: 2.4;
@@ -821,15 +885,22 @@ blockquote cite {
     text-decoration: none;
     font-family: Montserrat,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
     color: #fff;
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: transparent;
+    padding: 3px 13px;
+    margin: 10px 0;
+    transition: .25s ease-in-out;
     -webkit-transition: color 0.3s ease;
     -moz-transition: color 0.3s ease;
     -ms-transition: color 0.3s ease;
     -o-transition: color 0.3s ease;
     transition: color 0.3s ease; }
+    .site-nav__link:hover {
+      color: white; }
     @media (min-width: 960px) {
       .site-nav__link {
-        font-size: 13px;
-        text-transform: uppercase;
+        font-size: 14px;
         line-height: 2.4;
         font-weight: 400; } }
   .site-nav__footer a {
@@ -1270,25 +1341,34 @@ div.wpcf7-response-output {
   margin-bottom: 30px; }
   .faq__q-wrap {
     font-weight: 900;
-    color: #333; }
+    color: #333;
+    font-size: 16px; }
   .faq__a-wrap {
     margin-top: 10px;
     display: block; }
   .faq ol {
     margin-left: 40px;
     color: #808080;
-    font-size: 18px;
-    line-height: 34px;
-    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
     letter-spacing: -0.02em; }
+    @media (min-width: 720px) {
+      .faq ol {
+        font-size: 18px;
+        line-height: 34px;
+        margin-bottom: 30px; } }
     .faq ol li {
-      margin-bottom: 5px;
-      position: relative;
-      padding-left: 5px; }
+      margin-bottom: 10px;
+      position: relative; }
+      @media (min-width: 720px) {
+        .faq ol li {
+          margin-bottom: 5px;
+          padding-left: 5px; } }
       .faq ol li:before {
         content: "Q";
         font-size: 13px;
-        line-height: 28px;
+        line-height: 25px;
         margin-right: 15px;
         background: #f2a538;
         border-radius: 100%;
@@ -1303,6 +1383,9 @@ div.wpcf7-response-output {
         position: absolute;
         top: 3px;
         left: -40px; }
+        @media (min-width: 720px) {
+          .faq ol li:before {
+            line-height: 28px; } }
 
 .main-showcase {
   top: 50%;

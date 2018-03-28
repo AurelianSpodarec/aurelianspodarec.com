@@ -1,4 +1,4 @@
-<section class="action-block">
+<section class="section section--special action-block">
 
 	<?php if( have_rows('action_one') ): 
 		while( have_rows('action_one') ): the_row(); ?>

@@ -20,6 +20,24 @@
     		padding-top: 0;
     		@include transition(.25s ease-in-out); 
     	}
+
+    	& .site-nav__link {
+    		&:hover {
+    			border-color: #404040;
+    		}
+    	}
+
+    	& .highlighted-menu a {
+    		background:  #e08300;
+		   	border-color:  #e08300;
+		   	color: white;
+    		@include transition(.25s ease-in-out); 
+
+    		&:hover {
+		    	background: $color-brand;
+		    	border-color: $color-brand;
+		    }
+    	}
     }
     
     &.sticky-show {
@@ -133,4 +151,16 @@
 		
 	}
 
+}
+
+.highlighted-menu a{
+    color: $color-brand;
+    border-color: $color-brand;
+    font-weight: bold;
+   	@include transition(.25s ease-in-out); 
+
+    &:hover {
+    	color:  #e08300;
+    	border-color:  #e08300;
+    }
 }
