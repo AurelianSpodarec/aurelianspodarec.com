@@ -1,3 +1,1 @@
-# Aurelian Spodarec Mega Portfolio 2018
-
-## How to use
+# New Blog Site
