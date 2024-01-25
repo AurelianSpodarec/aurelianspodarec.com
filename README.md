@@ -1,42 +1,93 @@
-# Spotlight
+# Aurelian Spodarec
 
-Spotlight is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+/ black color
+/ Navy color subtle
+/ Gold Buttons
 
-## Getting started
+Who?
+- CEOs
+- Agencies
+- Startups
 
-To get started with this template, first install the npm dependencies:
+How? What do I want people to feel
+- Reliable
+- Slick
 
-```bash
-npm install
-```
 
-Next, create a `.env.local` file in the root of your project and set the `NEXT_PUBLIC_SITE_URL` variable to your site's public URL:
+What's the goal of the website?
+- Contact us
 
-```
-NEXT_PUBLIC_SITE_URL=https://example.com
-```
 
-Next, run the development server:
 
-```bash
-npm run dev
-```
+Brief:
+Personal website describing Aurelian Spodarec. Show the persona, at the end its personal
 
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
 
-## Customizing
 
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
+- Home
+  - Just a simple one secton page
 
-## License
 
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
+- Lets hike?
+- Join my Discord Community
 
-## Learn more
 
-To learn more about the technologies used in this site template, see the following resources:
+- Blog
+  - Articles [filter, part of X serie]
+  - Series [packaged categories] of one topic e.g. Entrepenurship lessons 1-10
 
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
-- [MDX](https://mdxjs.com) - the MDX documentation
+
+- Projects
+  - Projects working on or done (have single project case study?) perhaps
+  - [PROJECTS]
+    - TailBuilder
+    - CuratedUI[x]
+    - Blazetyping
+    - Autosite
+    - Cognitas Clobal
+    - Aurelian 2018
+    - GTA Ultimate Menu
+    - Tweet Crafter
+    - Trading journal
+
+
+- Services
+  - What I offer
+  - - Strategy (ui research, ux research, landing page strategy, product design)
+  - - Design (UI Design, Design Systems, Web Design) 
+  - - Development Front-end development (brochure sites, wordpress, web applications, dashboards) [React, NextJS, TailwindCSS, TypeScript]
+
+
+- About
+  - About me; perhaps images, short story, personality, sass im building [pictures of me on mountain, martial arts]
+  
+  - - Why me? I don't f*ck around. I don't waste time, don't play games. Not going to miss your deadline, not going to abandon the project. 
+  - - I focus on quaity and constant improvement of processes to make thing as efficient as possible - it adds up over time
+  - - I've been doing winter swimming - stupid? Perhaps, perhaps not. I can do hard stuff.
+  
+  
+- Contact
+
+
+- Resume (hidden page)
+
+
+
+
+
+
+
+
+
+
+- Record Videos of getting a job
+- Projects 
+
+Blog Posts - categories
+- job
+- programming
+
+  
+
+
+
