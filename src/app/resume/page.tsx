@@ -6,7 +6,9 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import { Button } from '@/components/Button'
 import Image from 'next/image'
 
-
+import qrCode from '@/images/qr-code-website.png';
+import Link from 'next/link'
+import { Prose } from '@/components/Prose'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -168,7 +170,7 @@ function Resume() {
   )
 }
 
- 
+
 
 export const metadata: Metadata = {
   title: 'Speaking',
@@ -176,13 +178,92 @@ export const metadata: Metadata = {
     'I’ve spoken at events all around the world and been interviewed for many podcasts.',
 }
 
+function CVHeader({ title, subTitle, link }: any) {
+  return (
+    <header className="flex justify-between items-center">
+      <div>
+        {title && <h2 className="">{title}</h2>}
+        {subTitle && <span>{subTitle}</span>}
+      </div>
+      <div>
+        {link && <Link href={link}>{link}</Link>}
+      </div>
+    </header>
+  )
+}
+
+function CVSection({ children }: any) {
+  return (
+    <section className="mb-8">
+      {children}
+    </section>
+  )
+}
+
 export default function Speaking() {
   return (
-    <SimpleLayout
-      title="I’ve spoken at events all around the world and been interviewed for many podcasts."
-      intro="One of my favorite ways to share my ideas is live on stage, where there’s so much more communication bandwidth than there is in writing, and I love podcast interviews because they give me the opportunity to answer questions instead of just present my opinions."
-    >
-    <Resume />
-    </SimpleLayout>
+    <div className="mx-auto max-w-screen-lg">
+      <Prose>
+        <header className="flex justify-between items-center mb-8">
+          <div className="flex items-center">
+            <Image src={qrCode} className="w-20 h-20" unoptimized />
+            <div>
+              <h1 className="text-2xl font-semibold">Aurelian Spodarec</h1>
+              <span>React/NextJS, JavaSctipt Software Engeener</span>
+            </div>
+          </div>
+
+          <div className="flex flex-col text-right">
+            <span>AurelianXSpodarec@gmail.com</span>
+            <span>AurelianSpodarec.co.uk</span>
+            <span>07751022563</span>
+          </div>
+        </header>
+
+        <CVSection>
+          <CVHeader title="Experience" link="https://TailBuilder.com" />
+          <div>
+            <p>A no-code TailwindCSS page builder (Webflow alike) that lets you quickly design pages by drag and drop pre-coded HTML/TailwindCSS sections or components and composing them with each other, which you can then export to your own codebase.</p>
+            <p>Used TypeScript, React/NextJS, ContextAPI/Redux, and inter-frame communication to implement complex functionality across separate, isolated rendering environments within the same application. </p>
+            <p>Due to the sheer amount of DOM modifications, I’ve created a DOM Helper library which helps manage the codebase. It helps with modifying the iFrame DOM elements that are not accessible via React while keeping the library maintainable and reusable.</p>
+            <p>To keep the app organized, certain conventions were used for the naming and folder structure to avoid confusion as well as ATOMIC Design principles were used.</p>
+            <p>Researched and analyzed similar apps, aiming to design a UI/UX which takes into account the strengths and weaknesses of existing products to create something better.</p>
+          </div>
+        </CVSection>
+
+        <CVSection>
+          <CVHeader title="Other Experience" />
+          <div>
+            <p>Worked on numerous brochure websites using HTML, CSS/Scss, TailwindCSS, and WordPress — in some projects I’ve used roots sage using the blade engine that Laravel provides, to achieve a modern workflow and a maintainable project codebase. </p>
+            <ol className="list-disc ml-4">
+              <li>Contributed to various meetings and discussions, while providing technical insight into the website; communicated with stakeholders</li>
+              <li>Gave training to staff on hand-off on how to utilize the CMS and provided support</li>
+              <li>Reduced cost of managing the website by implementing a component library that can be reused by the editor to form different layouts with custom data </li>
+              <li>Collaborated with designers and converted Figma and Adobe XD to front-end</li>
+            </ol>
+          </div>
+
+          <div>
+            <CVHeader title="Meakid" link="https://MeaKid.com" />
+            <div>
+              <p>Built and designed an e-commerce store selling fabrics in the UK. Used NextJS and wrote headless API from scratch with WordPress using WooCommerce. </p>
+              <ol className="list-disc ml-4">
+                <li>Implemented PayPal checkout to handle user payments </li>
+                <li>Used SSR to speed up loading time and improve SEO </li>
+                <li>Optimized images to decrease the loading time of the site </li>
+                <li>Built a custom restful API with PHP using WordPress</li>
+              </ol>
+            </div>
+          </div>
+
+
+          <div>
+            <CVHeader title="TweetCrafter" link="https://tweetcrafter.com/editor" />
+            <CVHeader title="Luavel" link="https://luavel.com/docs/reference/global-objects/table/" />
+          </div>
+        </CVSection>
+
+      </Prose>
+    </div>
   )
 }

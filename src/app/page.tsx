@@ -10,7 +10,6 @@ async function Home() {
         
         </div>
       </Container>
-     
     </>
   )
 }
