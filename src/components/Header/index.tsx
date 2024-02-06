@@ -201,18 +201,18 @@ function Header() {
                 'var(--header-inner-position)' as React.CSSProperties['position'],
             }}
           >
-            <div className="relative flex gap-4">
-              <div className="flex flex-1">
-              </div>
+            <div className="relative flex justify-between gap-4">
+              
               <div className="flex flex-1 justify-end md:justify-center">
                 <MobileNavigation className="pointer-events-auto md:hidden" />
-                <DesktopNavigation className="pointer-events-auto hidden md:block" />
+                <DesktopNavigation className="pointer-events-auto hidden md:block mx-auto" />
               </div>
+
               <div className="flex justify-end md:flex-1">
-                <div className="pointer-events-auto">
-                  <ThemeToggle />
-                </div>
+                <Link href="">Learn Dev</Link>
+                <Link href="">Get in touch</Link>
               </div>
+
             </div>
           </Container>
         </div>

@@ -3,7 +3,7 @@ import { type Metadata } from 'next'
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
 
-import '@/styles/tailwind.css'
+import '@/styles/styles.scss'
 
 export const metadata: Metadata = {
   title: {
