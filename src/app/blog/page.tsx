@@ -15,32 +15,37 @@ export default async function ArticlesIndex() {
   let articles = await getAllArticles()
 
   return (
-    <div>
+    <div className="pt-24">
 
-      <header>
+      <header className="flex justify-center mb-4">
         <div>
-          <h2>Some of my toughts</h2>
-          <p>Things I've experienced and figured out with others</p>
-        </div>
 
-        <input />
+          <div className="text-center">
+            <h2 className="text-gray-200 font-semibold text-6xl">My insights</h2>
+            <p className="text-gray-300 text-lg">Things I've experienced and figured out with others</p>
+          </div>
+
+          {/* <input /> */}
+        </div>
       </header>
 
-      <nav>
-        <button className="text-[#c7c7ca]">All Blogs</button>
-        <button className="text-[#c7c7ca] bg-[#ffffff17]/90">Design Systems</button>
-        <button className="text-[#c7c7ca]">Career Tips</button>
-        <button className="text-[#c7c7ca]">Portfolio Tips</button>
-      </nav>
+      <div className="mb-8">
+        <nav className="flex justify-center mx-auto space-x-2">
+          <button className="px-3 py-1.5 font-semibold rounded-lg text-sm text-[#c7c7ca] hover:bg-white/10">All Blogs</button>
+          <button className="px-3 py-1.5 font-semibold rounded-lg text-sm text-[#c7c7ca] hover:bg-white/10 bg-white/10">Design Systems</button>
+          <button className="px-3 py-1.5 font-semibold rounded-lg text-sm text-[#c7c7ca] hover:bg-white/10">Career Tips</button>
+          <button className="px-3 py-1.5 font-semibold rounded-lg text-sm text-[#c7c7ca] hover:bg-white/10">Portfolio Tips</button>
+        </nav>
+      </div>
 
-      <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
-        <div className="flex max-w-3xl flex-col space-y-16">
+      <div className="mx-auto max-w-7xl ">
+        <div className="grid grid-cols-3 gap-6">
           {articles.map((article) => (
             <Article key={article.slug} article={article} />
           ))}
         </div>
       </div>
-
+      <img src="https://assets-global.website-files.com/647ef68e217211d9af36ec9f/648194c62b75cd4512c70194_Hero%20BG.webp" loading="lazy" sizes="100vw" srcset="https://assets-global.website-files.com/647ef68e217211d9af36ec9f/648194c62b75cd4512c70194_Hero%20BG-p-500.webp 500w, https://assets-global.website-files.com/647ef68e217211d9af36ec9f/648194c62b75cd4512c70194_Hero%20BG-p-800.webp 800w, https://assets-global.website-files.com/647ef68e217211d9af36ec9f/648194c62b75cd4512c70194_Hero%20BG-p-1080.webp 1080w, https://assets-global.website-files.com/647ef68e217211d9af36ec9f/648194c62b75cd4512c70194_Hero%20BG.webp 2556w" alt="" class="ab-section-img" />
     </div>
   )
 }

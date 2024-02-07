@@ -4,13 +4,14 @@ export const article = {
   author: 'Adam Wathan',
   date: '2022-09-02',
   title: 'Introducing Animaginary: High performance web animations',
-  description:
-    'When you’re building a website for a company as ambitious as Planetaria, you need to make an impression. I wanted people to visit our website and see animations that looked more realistic than reality itself.',
+  excerpt: 'When you’re building a website for a company as ambitious as Planetaria, you need to make an impression. I wanted people to visit our website and see animations that looked more realistic than reality itself.',
+  thumbnail: "https://ph-files.imgix.net/c1adab98-f24c-46a2-bae2-b3c6c4028dcd.png",
+  category: "Programming"
 }
 
 export const metadata = {
   title: article.title,
-  description: article.description,
+  excerpt: article.excerpt,
 }
 
 export default (props) => <ArticleLayout article={article} {...props} />

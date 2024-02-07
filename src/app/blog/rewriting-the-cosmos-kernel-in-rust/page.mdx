@@ -4,13 +4,15 @@ export const article = {
   author: 'Adam Wathan',
   date: '2022-07-14',
   title: 'Rewriting the cosmOS kernel in Rust',
-  description:
-    'When we released the first version of cosmOS last year, it was written in Go. Go is a wonderful programming language, but it’s been a while since I’ve seen an article on the front page of Hacker News about rewriting some important tool in Go and I see articles on there about rewriting things in Rust every single week.',
+  excerpt:'When we released the first version of cosmOS last year, it was written in Go. Go is a wonderful programming language, but it’s been a while since I’ve seen an article on the front page of Hacker News about rewriting some important tool in Go and I see articles on there about rewriting things in Rust every single week.',
+  category: "Design System",
+  thumbnail: "https://s3-alpha.figma.com/hub/file/1220327129/48cd0974-5166-43c4-a2c1-a5aaef272882-cover.png"
 }
 
 export const metadata = {
   title: article.title,
-  description: article.description,
+  excerpt: article.excerpt,
+  category: article.category,
 }
 
 export default (props) => <ArticleLayout article={article} {...props} />

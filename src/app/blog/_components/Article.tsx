@@ -5,8 +5,21 @@ import { formatDate } from '@/lib/formatDate'
 
 function Article({ article }: { article: ArticleWithSlug }) {
   return (
-    <article className="md:grid md:grid-cols-4 md:items-baseline">
-      <Card className="md:col-span-3">
+    <article className=" bg-[#141415] rounded-lg p-4 border border-[#2a2a27]">
+      <div className="">
+
+
+        <div className="h-48 relative overflow-hidden mb-8">
+          <img className="w-full h-full rounded-lg object-fit test-card" src={article.thumbnail} />
+        </div>
+        <div>
+          <span className="text-primary">{article.category}</span>
+          <h3 className="text-lg text-gray-100">{article.title}</h3>
+          <p className="text-gray-300 text-sm">{article.excerpt}</p>
+        </div>
+      
+      </div>
+      {/* <Card className="md:col-span-3">
         <Card.Title href={`/articles/${article.slug}`}>
           {article.title}
         </Card.Title>
@@ -27,7 +40,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
         className="mt-1 hidden md:block"
       >
         {formatDate(article.date)}
-      </Card.Eyebrow>
+      </Card.Eyebrow> */}
     </article>
   )
 }
