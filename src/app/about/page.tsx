@@ -27,9 +27,9 @@ function SocialLink({
     <li className={clsx(className, 'flex')}>
       <Link
         href={href}
-        className="group flex text-sm font-medium text-zinc-800 transition hover:text-primary dark:text-zinc-200 dark:hover:text-primary"
+        className="group flex text-sm font-medium text-zinc-300 transition hover:text-primary dark:text-zinc-200 dark:hover:text-primary"
       >
-        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-primary" />
         <span className="ml-4">{children}</span>
       </Link>
     </li>
@@ -63,16 +63,34 @@ export default function About() {
               src={portraitImage}
               alt=""
               sizes="(min-width: 1024px) 32rem, 20rem"
-              className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+              className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-300"
             />
           </div>
         </div>
         <div className="lg:order-first lg:row-span-2">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-300 sm:text-5xl dark:text-zinc-100">
             I’m Spencer Sharp. I live in New York City, where I design the
             future.
           </h1>
-          <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+          <div className="mt-6 space-y-7 text-base text-zinc-100 dark:text-zinc-400">
+
+            
+            My name is Aurelian Spodarec, born in Poland, , living in UK.
+
+            I love focusing on perfection, 
+
+            Obsessed with clean code and abstraction, thus, can be a bad thing but learned to have balance.
+
+            I like the stoicism, and 
+
+            I've build a dozen of personal projects which I never deployed - you can sure check my blog post here going over them.
+
+            You can sure 
+
+            Let's be honest, you're not going to hire me just for my skill, but the fact \I'm reliable
+
+
+
             <p>
               I’ve loved making things for as long as I can remember, and wrote
               my first program when I was 6 years old, just two weeks after my

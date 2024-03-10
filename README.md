@@ -43,15 +43,22 @@ Personal website describing Aurelian Spodarec. Show the persona, at the end its 
 - Projects
   - Projects working on or done (have single project case study?) perhaps
   - [PROJECTS]
+    // Best
     - TailBuilder
-    - CuratedUI[x]
-    - Blazetyping
-    - Autosite
     - Cognitas Clobal
+    - Autosite
     - Aurelian 2018
-    - GTA Ultimate Menu
     - Tweet Crafter
+    - Tribe Dance
+    - Matrix(Payme) https://github.com/AurelianSpodarec/portaire-test-payme
+
+    - Blazetyping
+    - CuratedUI[x]
+    // All
+    - GTA Ultimate Menu
     - Trading journal
+    - Trafic Studio
+    - Zoeincheris
 
 
 - Services
@@ -155,3 +162,11 @@ Junior as Service!
   Id rather do better work with the current budget and timeframe, than do worse off job - id rather implement a better solution or clean up things, or make stuff really nice just mua mua than not.
 
 So I wouldn't mind spending an extra hour, two, three once a while or whatever on something, so I can also create something good, learn off it, and also be proud of the work - even tho the client will never know about this.
+
+
+
+
+https://www.reddit.com/r/digital_marketing/comments/j81jdj/color_scheme_that_exudes_luxury/
+https://www.reddit.com/r/graphic_design/comments/116muio/designers_that_work_in_agencies_or_design_firms/
+https://www.reddit.com/r/ecommerce/comments/106hx86/brand_coloring/
+https://www.bradhussey.ca/about-brad-hussey/
