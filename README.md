@@ -79,6 +79,11 @@ Personal website describing Aurelian Spodarec. Show the persona, at the end its 
   - Everytime you hire the wrong guy, it hurts you deeply in your bussiness
 
 
+
+White Label Development
+
+
+
   I'm a professional 
 
 

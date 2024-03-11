@@ -71,9 +71,58 @@ export default function Projects() {
     >
       <ul
         role="list"
-        className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+        className="grid grid-cols-1 gap-x-12 gap-y-16 "
       >
-        {projects.map((project) => (
+
+        {/* <div>
+          Image/Video
+          Tech/Category
+
+          Name
+
+          /View Project
+        </div> */}
+
+        <article className="relative isolate flex gap-16">
+          
+              <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:shrink-0 ">
+                <img className="rounded-md" src="https://web.archive.org/web/20220702204838im_/https://uploads-ssl.webflow.com/61ef53b38ff5acac3977a683/61f71ce3c6a3ac347e57a294_Designership%20Case%20Study-p-800.jpeg" />
+                {/* <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div> */}
+              </div>
+
+              <div>
+                <div className="flex items-center gap-x-4 text-xs">
+                  <a href="#" className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Coming Soon!</a>
+                </div>
+                <div className="group relative max-w-xl">
+                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                    <a href="#">
+                      <span className="absolute inset-0"></span>
+                      Boost your conversion rate
+                    </a>
+                  </h3>
+                  <p className="mt-5 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.</p>
+                </div>
+                <div className="mt-6 flex border-t border-gray-900/5 pt-6">
+                  <div className="relative flex items-center gap-x-4">
+                    <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="" className="h-10 w-10 rounded-full bg-gray-50" />
+                    <div className="text-sm leading-6">
+                      <p className="font-semibold text-gray-900">
+                        <a href="#">
+                          <span className="absolute inset-0"></span>
+                          Michael Foster
+                        </a>
+                      </p>
+                      <p className="text-gray-600">Co-Founder / CTO</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </article>
+
+
+        {/* {projects.map((project) => (
           <Card as="li" key={project.name}>
             <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
               <Image
@@ -92,7 +141,7 @@ export default function Projects() {
               <span className="ml-2">{project.link.label}</span>
             </p>
           </Card>
-        ))}
+        ))} */}
       </ul>
     </SimpleLayout>
   )

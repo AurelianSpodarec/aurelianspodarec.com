@@ -180,7 +180,7 @@ function Header() {
   return (
     <>
       <header
-        className="relative z-50 flex flex-none flex-col"
+        className="absolute w-full bg-white z-50 flex flex-none flex-col"
         style={{
           height: 'var(--header-height)',
           marginBottom: 'var(--header-mb)',

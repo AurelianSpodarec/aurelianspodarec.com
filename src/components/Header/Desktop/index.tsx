@@ -42,11 +42,11 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
       flex px-3 
       text-sm font-medium text-zinc-800
       ">
+          <NavItem href="/case-studies">Work</NavItem>
           <NavItem href="/blog">Blog</NavItem>
-          <NavItem href="/projects">Projects</NavItem>
           <NavItem href="/about">About</NavItem>
-          <NavItem href="/resume">Resume</NavItem>
-          <NavItem href="/community">Community</NavItem>
+          {/* <NavItem href="/resume">Resume</NavItem> */}
+          {/* <NavItem href="/community">Community</NavItem> */}
         </ul>
       </nav>
     </>
