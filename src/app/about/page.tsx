@@ -79,7 +79,8 @@ export default function About() {
       <div className=" gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
 
         <div className="lg:pl-20">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl dark:text-zinc-100">
+          <span className="text-7xl font-bold pb-16 block">About</span>
+          <h1 className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-5xl dark:text-zinc-100">
             I'm Aurelian Spodarec. I live in England and specialise in Front-end Development
           </h1>
           <div className="max-w-xs px-2.5 lg:max-w-none ">
@@ -164,8 +165,10 @@ export default function About() {
 
             <section>
 
-              <h2>Tools and equipment</h2>
-              <p>Over the years my work has been featured on leading publications.</p>
+              <div>
+                <h2 className="text-3xl font-bold">Tools and equipment</h2>
+                <p>Over the years my work has been featured on leading publications.</p>
+              </div>
 
               <div className="grid gap-3 grid-cols-6">
                 <Box

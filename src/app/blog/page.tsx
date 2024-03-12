@@ -4,7 +4,6 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import Article from './_components/Article'
 
-
 export const metadata: Metadata = {
   title: 'Articles',
   description:
@@ -45,7 +44,7 @@ export default async function ArticlesIndex() {
           ))}
         </div>
       </div>
-      <img src="https://assets-global.website-files.com/647ef68e217211d9af36ec9f/648194c62b75cd4512c70194_Hero%20BG.webp" loading="lazy" sizes="100vw" srcset="https://assets-global.website-files.com/647ef68e217211d9af36ec9f/648194c62b75cd4512c70194_Hero%20BG-p-500.webp 500w, https://assets-global.website-files.com/647ef68e217211d9af36ec9f/648194c62b75cd4512c70194_Hero%20BG-p-800.webp 800w, https://assets-global.website-files.com/647ef68e217211d9af36ec9f/648194c62b75cd4512c70194_Hero%20BG-p-1080.webp 1080w, https://assets-global.website-files.com/647ef68e217211d9af36ec9f/648194c62b75cd4512c70194_Hero%20BG.webp 2556w" alt="" class="ab-section-img" />
+   
     </div>
   )
 }

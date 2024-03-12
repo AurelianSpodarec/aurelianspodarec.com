@@ -17,8 +17,8 @@ function NavItem({
         href={href}
         className={clsx(
           'relative block px-3 py-2 transition',
-          isActive
-            ? 'text-primary dark:text-teal-400'
+          isActive ?
+            'text-primary dark:text-teal-400'
             : 'hover:text-primary dark:hover:text-teal-400',
         )}
       >
@@ -34,14 +34,14 @@ function NavItem({
 function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
   return (
     <>
-      <Link href="/">
+      <Link href="/" className="font-bold text-3xl">
         Aurelian Spodarec
       </Link>
       <nav {...props}>
         <ul className="
-      flex px-3 
-      text-sm font-medium text-zinc-800
-      ">
+          flex px-3
+          text-sm font-medium text-zinc-800
+        ">
           <NavItem href="/case-studies">Work</NavItem>
           <NavItem href="/blog">Blog</NavItem>
           <NavItem href="/about">About</NavItem>
