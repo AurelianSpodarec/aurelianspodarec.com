@@ -14,8 +14,8 @@ function Header() {
     <header className="fixed w-full bg-white z-50 flex flex-none flex-col">
       <div className="top-0 z-10 h-16 flex items-center">
 
-        <Container className="top-[var(--header-top,theme(spacing.6))] w-full">
-          <div className="relative flex justify-between gap-4">
+        {/* <Container className="top-[var(--header-top,theme(spacing.6))] w-full"> */}
+          <div className="relative flex justify-between gap-4 w-full px-8">
 
             <div className="flex flex-1 justify-end md:justify-center">
               <MobileNavigation className="pointer-events-auto md:hidden" />
@@ -28,7 +28,7 @@ function Header() {
             </div>
 
           </div>
-        </Container>
+        {/* </Container> */}
 
       </div>
     </header>

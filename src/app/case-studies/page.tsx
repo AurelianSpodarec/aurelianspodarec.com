@@ -21,10 +21,13 @@ export const metadata: Metadata = {
   description: 'Things I’ve made trying to put my dent in the universe.',
 }
 
-function CardWork({ project }:any) {
+function CardWork({ project }: any) {
 
   return (
     <article className="relative isolate flex gap-16">
+      <video className="uk-utility-object-fit-cover uk-position-z-index" autoPlay muted loop playsInline>
+        <source src="https://player.vimeo.com/progressive_redirect/playback/844908593/rendition/1080p/file.mp4?loc=external&amp;signature=8944fdf1667c6d378966353b7b7761120bbce3882ba99e7930817f8f35c4c8df" />
+      </video>
       {project.title}
     </article>
   )
