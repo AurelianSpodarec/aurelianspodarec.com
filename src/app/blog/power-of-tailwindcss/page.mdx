@@ -1,0 +1,21 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Aurelian Spodarec',
+  date: '13/02/2024',
+  title: 'The power of TailwindCSS',
+  excerpt: 'When you’re building a website for a company as ambitious as Planetaria, you need to make an impression. I wanted people to visit our website and see animations that looked more realistic than reality itself.',
+  thumbnail: "https://ph-files.imgix.net/c1adab98-f24c-46a2-bae2-b3c6c4028dcd.png",
+  category: "Programming"
+}
+
+export const metadata = {
+  title: article.title,
+  excerpt: article.excerpt,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+# TailwindCSS
+
+Love it or hate it, you're using it anyway - you just don't know it.
