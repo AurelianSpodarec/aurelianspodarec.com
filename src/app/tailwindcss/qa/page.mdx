@@ -1,0 +1,73 @@
+import { LayoutQA } from '@/components/TailwindCSS/LayoutQA'
+
+
+export const article = {
+  author: 'Aurelian Spodarec',
+  date: '13/02/2024',
+  title: 'The power of TailwindCSS',
+  excerpt: 'When you’re building a website for a company as ambitious as Planetaria, you need to make an impression. I wanted people to visit our website and see animations that looked more realistic than reality itself.',
+  thumbnail: "https://ph-files.imgix.net/c1adab98-f24c-46a2-bae2-b3c6c4028dcd.png",
+}
+
+export const metadata = {
+  title: article.title,
+  excerpt: article.excerpt,
+}
+
+
+export default (props) => <LayoutQA article={article} {...props} />
+
+# But HTML Large and UGLY! Ewwww 👶🤮👼
+
+The OVERALL file size you ship is smaller. Yea...
+
+By writing CSS you actually type more characters
+
+
+Compare this
+```html
+text-primarly
+```
+
+to this 
+
+```css
+color: text-primarly
+```
+
+13characters with TailwindCSS
+20characters with normal CSS in a CSS file that you have to first navigate to...
+
+WOW! 
+
+And there you talking about verbosity... Hypocryte!
+
+
+
+
+And not only that, you just created one more file! 
+
+
+Wanna play a detective?
+
+But Large projects... ON large projects you will need to search though your css files - wish you've became a detective? Its not too late! The police force needs more people [enroll now in the UK] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+My only CSS hot take is that with component-based frameworks, descriptive classes, and nested styles are obsolete.
+
+In the past we used classes to give meaning to elements in lengthy markup files and make them easier to target with selectors.
+
+Both are much easier now when the unit of work is a single component, not a whole page.
+
+And if you need to apply styles to a nested element it would be better to extract a component instead and scope its styles to it.

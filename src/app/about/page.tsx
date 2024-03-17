@@ -76,92 +76,112 @@ function Box({ logo, logoName, title, description }: any) {
 export default function About() {
   return (
     <Container className="mt-16 sm:mt-32">
-      <div className=" gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
 
+
+
+
+      <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
         <div className="lg:pl-20">
-          <span className="text-7xl font-bold pb-16 block">About</span>
-          <h1 className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-5xl dark:text-zinc-100">
-            I'm Aurelian Spodarec. I live in England and specialise in Front-end Development
-          </h1>
-          <div className="max-w-xs px-2.5 lg:max-w-none ">
-            <Image
+          <div className="max-w-xs px-2.5 lg:max-w-none">
+          <Image
               src={portraitImage}
               alt=""
               sizes="(min-width: 1024px) 32rem, 20rem"
-              className="w-full aspect-square rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-300 max-h-[500px] overflow-hidden"
+              className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
             />
           </div>
         </div>
+        <div className="lg:order-first lg:row-span-2">
+          <h1 className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-5xl dark:text-zinc-100">
+            I'm Aurelian Spodarec and I specialise in Front-end Development
+          </h1>
+
+          Hiring the wrong front-end developer is an expensive mistake.
+
+          Everyone has the skill to do what you want, but you'll probably found out that alone isn't enough.
+
+          Clients would often complain that they are ghohested and getting stressed out because a freelancer disappeared but that's not somethng you'll have to worry with me; I will tell you directly if there is an issue and talk about it with you.
+
+          I have a set of processes that I follow to make every project successfull, the most obevious is using a software management system like Trello or Notion has, which allows you and me to see where the project is at, wht has been done, what needs to be done, and how far we are from an MVP.
+
+
+          Here's what you can expect from me:
+
+          - Communication; I will not shy away and tell you 
+          - Relability
+
+          If you like this website, you'll like my work (although this is undr constructoin)
+
+          On the side, over the years working in the industry, I've realised there are a few gaps that need to be addressed, and for that reason I'm building a project called TailBuilder (very unfinished), and another project which I can't share.
+
+          And don't think I won't have time for your project. 
+          
+          I am a professional, if I too busy I'm not goingn to take your project. Beside, every developer you talk to, has some side project they work on, they just aren't honest about it.
+
+
+          Beside that, I like stoicism and sport etc..
+
+
+
+
+          My name is Aurelian Spodarec, born in Poland, living in UK.
+
+          I love focusing on perfection, thus, not always the best choice
+
+          Obsessed with clean code and abstraction, thus, can be a bad thing but learned to have balance.
+
+          I design pretty websites focused on user usaility, accessability and convertion rate by following some key practices
+
+          I like the stoicism, and
+
+          I've build a dozen of personal projects which I never deployed - you can sure check my blog post here going over them.
+
+          You can sure
+
+
+          Let's be honest, you're not going to hire me just for my skill, but the fact \I'm reliable
+
+
+          I'm not the one to be left behind. I'm working on some side projects that I want to make a busienss out of it - a lot of developres are.
+
+          Self-taught desinger, coder
+
+          Started with WOrdPress development but changed to
+
+          Over the years building websites and webapps I've discovered that there a need for better tools and or apps to help with common issue that coders and or desingers face in their day to day life.
+          I'm still working on these side-proejcts, but you can check an "unfinished", template builder called TailBuilder.com
+
+
+
+          Beliefs and values
+
+          - Everything is broken, and that's just fine
+
+          - Systematic approach
+
+          - Efficiency
+          Sometimes you need to
+
+          - Stoicism
+          Stay calm and figure it out
+
+
+          - Celebrate the wins
+          Enjoy the journey
+        </div>
+      </div>
+
+
+
+
+
+
+      <div className=" gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+
 
         <div className="lg:order-first lg:row-span-2">
           <div className="mt-6 space-y-7 text-base text-zinc-700 dark:text-zinc-400">
 
-            Hiring the wrong front-end developer is an expensive mistake
-
-
-
-
-            My name is Aurelian Spodarec, born in Poland, living in UK.
-
-            I love focusing on perfection, thus, not always the best choice
-
-            Obsessed with clean code and abstraction, thus, can be a bad thing but learned to have balance.
-
-            I design pretty websites focused on user usaility, accessability and convertion rate by following some key practices
-
-            I like the stoicism, and
-
-            I've build a dozen of personal projects which I never deployed - you can sure check my blog post here going over them.
-
-            You can sure
-
-            Let's be honest, you're not going to hire me just for my skill, but the fact \I'm reliable
-
-
-            I'm not the one to be left behind. I'm working on some side projects that I want to make a busienss out of it - a lot of developres are.
-
-            Self-taught desinger, coder
-
-            Started with WOrdPress development but changed to
-
-            Over the years building websites and webapps I've discovered that there a need for better tools and or apps to help with common issue that coders and or desingers face in their day to day life.
-            I'm still working on these side-proejcts, but you can check an "unfinished", template builder called TailBuilder.com
-
-
-
-            Beliefs and values
-
-            - Everything is broken, and that's just fine
-
-            - Systematic approach
-
-            - Efficiency
-            Sometimes you need to
-
-            - Stoicism
-            Stay calm and figure it out
-
-
-            - Celebrate the wins
-            Enjoy the journey
-
-            Tools and equipment
-            - NextJS
-            - TypeScript
-            - TailwindCSS
-            - ShadCN/UI
-            - Drizle ORM
-            - React
-            - React Hook Form
-
-            - Redux
-            - VSCode
-            - React Query
-            - Pixi.js
-            - Figma
-            - Slack
-
-            / HTML5, CSS3
 
             <section>
 

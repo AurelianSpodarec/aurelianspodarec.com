@@ -1,0 +1,83 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Aurelian Spodarec',
+  date: '13/02/2024',
+  title: 'The power of TailwindCSS',
+  excerpt: 'I wanted people to visit our website and see animations that looked more realistic than reality itself.',
+  thumbnail: "https://ph-files.imgix.net/c1adab98-f24c-46a2-bae2-b3c6c4028dcd.png",
+  category: "Programming"
+}
+
+export const metadata = {
+  title: article.title,
+  excerpt: article.excerpt,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+# Learning JavaScript before React is a bad idea
+
+To contrary what a lot of people might say, that React is a JavaScript library therefore you should learn JavaScript fundamnetlas first, and understand how "DOM" works - this idea sounds good in theory, but in practice is you have a just a little bit of a deeper thought for more than 5seconds, you'll understand why this is a failed statement.
+
+
+The way to understand why the above is wrong is to put yourself in a beginners shoes for a second.
+
+First of all, let's assume the person does not have a "good job", nor works at a job like warehouse and does not commute 2hours a day, but instead has the lxury to sit and commit to learn programming without going mental on how bad the low end jobs are.
+
+
+Assume you want to build an interactive website, say a button where when you click, and it adds the item to a cart - all in JS Objects/Arrays - since usually beginners wont use a database and will create DEMO projects just like these
+
+This is what they would do:
+- Create HTML/CSS
+- Write the functionality for the card to add the item, and all the logic
+- Display the values from JavaScript to HTML
+- Somehow, figure out how to re-render the DOM each time there has been interactivity made
+
+As you might or might not forgotten, React was created to help work with the DOM. One of the biggest issue working with Vanilla JavaScript and the DOM is that when you update a state, it does not update in the UI.
+
+So how do you do it? I'll let that question rest to peace.
+
+
+
+
+
+Now, having programming -JavaScript- fundamentals is important, but you don't need to actually know "JavaScript", but general progrgamming concepts. 
+
+
+
+
+Learning the DOM is a waste of time, because its something you will forget as a beginner (since you have a thousand other thing to learn and practice), so when you start doing react you'll never use it.
+
+So why spend an extra month doing this?
+
+Now imagine you are broke and go work at a warehouse, just learning the DOM alone can add a few months - and for what? 
+
+
+
+# My story of learning JavaScript and React
+
+I got a job at a company in Manchester, many years back. It wasn't my first company, I used to do HTML/CSS and WordPress elsewhere but this job was heavy on React.
+
+Doing WordPress websites, I've realised my JavaScript skill is non-existent. 
+
+So I decided to build an app that would have a lot of interactivity
+
+It was very DOM focused, as the JS functionality was easy.
+
+
+When I went and got the job, started React - I was amazed on how much more JavaScript there is. It was a simple React Dashboard, something I can do now in a day or two with some API calls. 
+
+
+People who write to learn JavaScript before React are:
+- Inexperienced
+- Never thought about it deeply
+- Too Senior and can't relate to begginners; I rember my beginner times very well.
+
+
+
+
+
+
+Let's start with the DOM.
+
