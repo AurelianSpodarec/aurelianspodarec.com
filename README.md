@@ -43,21 +43,29 @@ Personal website describing Aurelian Spodarec. Show the persona, at the end its 
 - Projects
   - Projects working on or done (have single project case study?) perhaps
   - [PROJECTS]
-    // Best
-    - TailBuilder
-    - Cognitas Clobal
-    - Autosite
+    // Can do fast
     - Aurelian 2018
-    - Tweet Crafter
-    - Tribe Dance
+    - TailBuilder
     - Matrix(Payme) https://github.com/AurelianSpodarec/portaire-test-payme
+  
 
+    - Autosite
+
+
+    // Best
+    - Tribe Dance
+    - Cognitas Clobal
+    - Tweet Crafter
     - Blazetyping
     - CuratedUI[x]
+
+  
     // All
     - GTA Ultimate Menu
     - Trading journal
     - Trafic Studio
+    - You'll Speak
+    - LearnX
     - Zoeincheris
 
 

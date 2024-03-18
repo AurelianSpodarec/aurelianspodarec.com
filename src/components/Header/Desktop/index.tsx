@@ -1,6 +1,7 @@
 import clsx from "clsx"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import ThemeToggle from "../ThemeToggle"
 
 function NavItem({
   href,
@@ -37,7 +38,8 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
       <Link href="/" className="font-bold text-3xl">
         Aurelian Spodarec
       </Link>
-      <nav {...props}>
+
+      <nav {...props} className="mx-auto">
         <ul className="
           flex px-3
           text-sm font-medium text-zinc-800
@@ -51,6 +53,11 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
           {/* <NavItem href="/community">Community</NavItem> */}
         </ul>
       </nav>
+
+      <div className="flex">
+        <ThemeToggle />
+        <Link href="" className="border-2 rounded-xl bg-primary/80 text-black font-semibold px-2.5 py-1.5">Get in touch</Link>
+      </div>
     </>
   )
 }
